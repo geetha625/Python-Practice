@@ -20,5 +20,6 @@ print(type(name))
 value = 10
 print(value, type(value))
 
+
 value = "Python"
 print(value, type(value))
