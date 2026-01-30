@@ -52,6 +52,69 @@
  #   print(i)
 
 #6.check if 25 exists in the list
-mylist=[5,10,15,20,25]
-if 25 in mylist:
-    print("yes")
+#mylist=[5,10,15,20,25]
+#if 25 in mylist:
+  #  print("yes")
+
+
+         #list comprehension
+
+#1.create a list of nums from 1 to 10 using list comprehension
+#mylist=[1,2,3,4,5,6,7,8,9,10]
+#newlist=[i for i in mylist]
+#print(newlist)
+
+#2.create a list that contains only even nums
+#mylist=[1,2,3,4,5,6]
+#newlist=[i for i in mylist if i%2==0]
+#print(newlist)
+
+#3.from the same list,create a new list of squares of all nums
+#mylist=[1,2,3,4,5,6]
+#newlist=[i*i for i in mylist]
+#print(newlist)
+
+#4.create a list of nums greater than 5
+#nums=[2,4,6,8,10]
+#newlist=[i for i in nums if i>5]
+#print(newlist)
+
+#5.convert the list into uppercase using list comprehension
+#names=["python","java","c"]
+#newlist=[i.upper() for i in names]
+#print(newlist)
+
+          #sort list
+
+#6.sort the list in ascending order
+#nums=[5,1,4,2,3]
+#nums.sort()
+#print(nums)
+
+#7.sort the same list in descending order
+#nums=[5,1,4,2,3]
+#nums.sort(reverse=True)
+#print(nums)
+
+#8.sort the list without changing the original list
+#nums=[7,3,9,1]
+#newlist=[i for i in nums if sorted]
+#print(nums)
+
+#9.sort the list of strings alphabetically
+#names=["banana","apple","cherry"]
+#names.sort()
+#print(names)
+
+#10.create a new list of squares then sort the result in descending order
+#nums=[3,1,4,2,5]
+#newlist=[i*i for i in nums]
+#newlist.sort(reverse=True)
+#print(newlist)
+
+#nums=[x for x in range(1,11)]
+#print(nums)
+
+nums=[7,3,9,1]
+newlist=sorted(nums)
+print(newlist)
