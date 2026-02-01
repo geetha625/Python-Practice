@@ -115,6 +115,36 @@
 #nums=[x for x in range(1,11)]
 #print(nums)
 
-nums=[7,3,9,1]
-newlist=sorted(nums)
-print(newlist)
+#nums=[7,3,9,1]
+#newlist=sorted(nums)
+#print(newlist)
+
+
+#wt is the diff b/w append() and extend()?
+#append : it adds an element at the end of the list
+#nums=[1,2,3]
+#nums.append([4,5])
+#print(nums)
+#extend : it adds multiple elements
+#nums=[1,2,3]
+#nums.extend([4,5])
+#print(nums)
+
+#reverse a list without using reverse() or slicing
+#nums=[1,2,3]
+#rev=[]
+#for i in nums:
+#   rev.insert(0,i)
+#print(rev)
+
+#find the second largest element in a list
+nums=[10,20,4,45,99]
+largest=second=-1
+for i in nums:
+   if i >largest:
+      second=largest
+      largest=i
+   elif i > second and i!=largest:second=i
+print(second)
+
+
