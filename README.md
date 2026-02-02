@@ -7,7 +7,8 @@ This repository contains my Python learning journey.
 - Data Types
 - Type Casting
 - Booleans
-- Strings 
+- Strings
+- lists
 
 ## Purpose
 I am practicing Python basics to build a strong foundation for:
