@@ -9,6 +9,7 @@ This repository contains my Python learning journey.
 - Booleans
 - Strings
 - lists
+- tuples
 
 ## Purpose
 I am practicing Python basics to build a strong foundation for:
