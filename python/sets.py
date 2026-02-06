@@ -26,7 +26,38 @@
 #print(s)
 
 #check output
-s={1,2,3}
-s.add(2)
-print(s)
+#s={1,2,3}
+#s.add(2)
+#print(s)
 
+#s={"apple","banana","cherry"}
+#s.remove("banana")
+#print(s)
+
+#s={"apple","banana","cherry"}
+#s.remove(2)
+#print(s)     #raise an error
+
+#s={1,2,3}
+#s.discard(2)
+#print(s)
+
+#s={1,2,3}
+#s.discard(5)
+#print(s)   #will not raise an error
+
+#s={"apple","banana","cherry"}
+#s.pop()
+#print(s)
+
+#s={1,2,3,4,5}
+#s.clear()
+#print(s)
+
+#s={1,2,3,4}
+#del s
+#print(s)
+
+s={1,2,3,4,5}
+for x in s:
+   print(s)
