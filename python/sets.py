@@ -89,9 +89,102 @@
 #else:
 #    print("no")
 
-#remove even nums
-s={1,2,3,4,5,6}
-if s%2==0:
-    s.pop()
-    print(s)
 
+#set1={"a","b","c"}
+#set2={1,2,3}
+#set3=set1.union(set2)
+#print(set3)
+
+#set1={"a","b","c"}
+#set2={1,2,3}
+#set3=set2|set1
+#print(set3)
+
+#set1={"a","b","c"}
+#set2={1,2,3}
+#set3={"john","alena"}
+#set4=set1.union(set2,set3)
+#print(set4)
+
+#set1={"a","b","c"}
+#set2={1,2,3}
+#set1.update(set2)
+#print(set1)
+
+#x={1,2,3}
+#y=(5,6,7)
+#z=x.union(y)
+#print(z)
+
+#set1={"apple",1,"banana",0}
+#set2={True,"google",1,"apple",2}
+#set1.intersection_update(set2)
+#print(set1)
+
+#join sets
+
+#1.join 2 sets using union
+#a={1,2,3}
+#b={3,4,5}
+#c=a.union(b)
+#print(c)
+
+#2.using update
+#a={10,20}
+#b={20,30,40}
+#a.update(b)
+#print(a)
+
+#3.using intersection
+#s1={1,2,3,4}
+#s2={3,4,5,6}
+#s3=s1.intersection(s2)
+#print(s3)
+
+#4.find elements in only 1st set
+#a={1,2,3,4}
+#b={3,4,5}
+#c=a.difference(b)
+#print(c)
+
+#5.find elemnts not common in both sets
+#x={1,2,3}
+#y={3,4,5}
+#z=x.symmetric_difference(y)
+#print(z)
+
+#6.merge multiple sets
+#s1={1,2}
+#s2={3,4}
+#s3={4,5}
+#s4=s1|s2|s3
+#print(s4)
+
+#7.check if 2 sets are equal
+#a={1,2,3}
+#b={3,2,1}
+#if a==b:
+#    print("true")
+#else:
+ #   print("false")
+
+#8.check if a is subset of b
+a={1,2}
+b={1,2,3,4}
+if a.issubset(b):
+    print("true")
+else:
+    print("false")
+
+#9.remove common elemnts from both sets
+#a={1,2,3,4}
+#b={3,4,5}
+#a.difference_update(b)
+#print(a)
+#print(b)
+
+#10.find unique elements
+l1=[1,2,3,4,4,5]
+l2=[3,4,6,7]
+s=set(l1).union(set(l2))
+print(s)
