@@ -58,6 +58,40 @@
 #del s
 #print(s)
 
-s={1,2,3,4,5}
-for x in s:
-   print(s)
+#s={1,2,3,4,5}
+#for x in s:
+#   print(s)
+
+#remove vs discard
+#s={10,20,30,40}
+#s.remove(20)
+#s.discard(50)
+#print(s)
+
+#pop in set
+#s={1,2,3,4}
+#s.pop()
+#print(s)
+
+#clear vs del
+#s={5,6,7}
+#s.clear()
+#print(s)
+
+#s={5,6,7}
+#del s
+#print(s)
+
+#check
+#s={10,20,30,40}
+#if 50 in s:
+#    print("yes")
+#else:
+#    print("no")
+
+#remove even nums
+s={1,2,3,4,5,6}
+if s%2==0:
+    s.pop()
+    print(s)
+
