@@ -138,9 +138,7 @@
 
 #4.add 5 to the list inside the tuple
 #t=(1,[2,3],4)
-#x=list(t)
-#x.append(5)
-#t=tuple(x)
+#t[1].append(5)
 #print(t)
 
 #5.unpack into a,b,c and print them
@@ -189,9 +187,11 @@
 #print(x)
 
 #12.predit the output
-t=(1,2,3)
-t+=(4,)
-print(t)
+#t=(1,2,3)
+#t+=(4,)
+#print(t)
+
+
 
 
 

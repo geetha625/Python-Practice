@@ -138,13 +138,15 @@
 #print(rev)
 
 #find the second largest element in a list
-nums=[10,20,4,45,99]
-largest=second=-1
-for i in nums:
-   if i >largest:
-      second=largest
-      largest=i
-   elif i > second and i!=largest:second=i
-print(second)
+#nums=[10,20,4,45,99]
+#largest=second=-1
+#for i in nums:
+#   if i >largest:
+#      second=largest
+#      largest=i
+#   elif i > second and i!=largest:second=i
+#print(second)
+
+
 
 
