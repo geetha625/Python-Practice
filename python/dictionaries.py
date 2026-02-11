@@ -128,6 +128,138 @@
 #key="c"
 #print(d["c"])
 
-d={"x":1,"y":2}
-print("x" in d)
-print(1 in d)
+#d={"x":1,"y":2}
+#print("x" in d)
+#print(1 in d)
+
+#dict={
+#   "brand":"ford",
+#   "model":"mustang",
+#   "year":1964
+#}
+#dict["year"]=2018
+#print(dict)
+
+#dict={
+#    "brand":"ford",
+#    "model":"mustang",
+#    "year":1964
+#}
+#dict.update({"year":2020})
+#print(dict)
+
+#dict={
+#    "brand":"ford",
+#    "model":"mustang",
+#    "year":1964
+#}
+#dict["color"]="red"
+#print(dict)
+
+#dict={
+#    "brand":"ford",
+#    "model":"mustang",
+#    "year":1964
+#}
+#dict.pop("model")
+#print(dict)
+
+#dict={
+   # "brand":"ford",
+  #  "model":"mustang",
+ #   "year":1964
+#}
+#dict.popitem()
+#print(dict)
+
+#dict={
+ #   "brand":"ford",
+ #   "model":"mustang",
+ #   "year":1964
+#}
+#del dict["brand"]
+#print(dict)
+
+#dict={
+#    "brand":"ford",
+#    "model":"mustang",
+#    "year":1964
+#}
+#del dict
+#print(dict)
+
+#dict={
+#    "brand":"ford",
+#    "model":"mustang",
+#    "year":1964
+#}
+#dict.clear()
+#print(dict)
+
+#practice questions
+
+#d={"a":1}
+#d.pop("b")
+#print(d)
+
+#d={"a":1,"b":0,"c":3,"d":0}
+#d.pop("b")
+#d.pop("d")
+#print(d)
+
+#change items
+#1.change the value of "math" from 90 to 100
+#marks={"math":90,"phy":80}
+#marks["math"]=100
+#print(marks)
+
+#Q2.Increase all values in a dictionary by 10.
+#d = {"a":10, "b":20}
+#for k in d:
+#    d[k]+=10
+#print(d)
+
+#🔹 Add Items
+#Q3Add a new key "chem" with value 85.
+#d={}
+#d["chem"]=85
+#print(d)
+
+#Q4Merge two dictionaries:
+#d1 = {"a":1, "b":2}
+#d2 = {"c":3}
+#d1.update(d2)
+#print(d1)
+
+#Q5.Add a key only if it doesn’t already exist.
+#d={
+#    "a":1,"b":2
+#}
+#if "c" not in d:
+#    d["c"]=3
+#print(d)
+
+#🔹 Remove Items
+#Q6.Remove key "b" safely (no error if not present).
+#d={"a":1,"c":3}
+#d.pop("b",none)
+#print(d)
+
+#Q7.Remove all keys whose value is 0.
+d = {"a":1, "b":0, "c":3, "d":0}
+d={k:v for k,v in d.items() if v!=0}
+print(d)
+
+#Q8.Delete the dictionary completely.
+#d={"a":1,"b":2,"c":3}
+#del d
+#print(d)
+
+#Q9.Remove the last inserted item from a dictionary.
+#d={"a":1,"b":2,"c":3}
+#d.popitem()
+#print(d)
+
+
+
+
