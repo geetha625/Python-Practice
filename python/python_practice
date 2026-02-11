@@ -1,0 +1,93 @@
+#1.reverse a string
+#s="python"
+#print(s[::-1])
+
+#s="python"
+#rev=""
+#for i in s:
+#    rev=i+rev
+#print(rev)
+
+#2.check palindrome
+#s="madam"
+#rev=""
+#for i in s:
+#    rev=i+rev
+#if rev==s:
+#    print("palindrome")
+#else:
+ #   print("not a palindrome")
+
+#s="python"
+#rev=""
+#for i in s:
+#    rev=i+rev
+#if rev==s:
+#    print("palindrome")
+#else:
+#    print("not a palindrome")
+
+#3.find largest num in a list
+#nums=[10,45,3,99,23]
+#print(max(nums))
+
+#4.swap 2 nums without using third variable
+#a=5
+#b=10
+#(a,b)=(b,a)
+#print(a,b)
+
+#5.check even or odd
+#n=17
+#if n%2==0:
+#    print("even")
+#else:
+#    print("odd")
+
+#Check the data type of a variable.
+#a=12
+#print(type(a))
+
+#Write a program to input a number and print its type.
+#a=(input("enter a num:"))
+#print(type(a))
+
+#Convert float to int and print both values.
+#a=7.4
+#print(int(a))
+#print(a)
+
+#Convert "100" to integer and add 20.
+#a="100"
+#b=int(a)
+#c=b+20
+#print(c)
+
+#Convert 10 to float and string.
+#a=10
+#b=float(a)
+#c=str(a)
+#print(b)
+#print(c)
+
+#Take user input and convert it to integer.
+#a=(input("enter a num:"))
+#b=int(a)
+#print(b)
+
+#Swap two variables without using a third variable.
+#a=12
+#b=5
+#(a,b)=(b,a)
+#print(a,b)
+
+#Print the memory address of a variable.
+#a=10
+#print(id(a))
+
+#Assign multiple values in one line.
+a,b,c=5,3,9
+print(a,b,c)
+
+
+
