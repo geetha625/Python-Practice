@@ -86,8 +86,49 @@
 #print(id(a))
 
 #Assign multiple values in one line.
-a,b,c=5,3,9
-print(a,b,c)
+#a,b,c=5,3,9
+#print(a,b,c)
+
+#convert int and str to boolean
+#n=5
+#x="str"
+#print(bool(n))
+#print(bool(x))
+
+#count vowels in a str
+#n="geetha"
+#vowels="aeiou"
+#count=0
+#for ch in n:
+#    if ch in vowels:
+#     count+=1
+#print(count)
+
+#print every sec char of a string
+#n="geetha" 
+#print(n[1::2])
+
+#n="geetha"
+#for i in range(1,len(n),2):
+#    print(n[i])
+
+#find the largest num in list
+#n=[2,7,13,8,56]
+#print(max(n))
+
+#remove duplicates from a list
+#n=[2,8,4,9,1,1,0]
+#n=list(set(n))
+#print(n)
+
+n=[2,8,4,9,1,1,0]
+new=[]
+for i in n:
+    if i not in new:
+        new.append(i)
+print(new)
+
+
 
 
 
