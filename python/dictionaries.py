@@ -246,19 +246,82 @@
 #print(d)
 
 #Q7.Remove all keys whose value is 0.
-d = {"a":1, "b":0, "c":3, "d":0}
-d={k:v for k,v in d.items() if v!=0}
-print(d)
+#d = {"a":1, "b":0, "c":3, "d":0}
+#d={k:v for k,v in d.items() if v!=0}
+#print(d)
 
 #Q8.Delete the dictionary completely.
 #d={"a":1,"b":2,"c":3}
 #del d
-#print(d)
 
 #Q9.Remove the last inserted item from a dictionary.
 #d={"a":1,"b":2,"c":3}
 #d.popitem()
 #print(d)
+
+#loops
+#1.print all keys
+#d={"a":10,"b":20,"c":30}
+#for i in d.keys():
+#    print(i)
+
+#2.print all values
+#d={"a":10,"b":20,"c":30}
+#for i in d.values():
+#    print(i)
+
+#3.print key value pairs in format
+#d={"a":10,"b":20,"c":30}
+#for x,y in d.items():
+#    print(x,y)
+
+#4.add 5 to all values using loops
+#d={"a":10,"b":20,"c":30}
+#for k in d:
+#     d[k]=d[k]+5
+#print(d)
+
+#5.multiply all values by 2
+#d={"a":10,"b":20,"c":30}
+#for 
+
+#6.count total sum of values
+#d={"a":10,"b":20,"c":30}
+#count=0
+#a+b+c==sum
+#for i in d.values():
+#    sum=count+i
+#print(count)
+
+#7.count no of keys&values
+#d={"a":10,"b":20,"c":30}
+#total=0
+#for v in d.values():
+#    total+=v
+#print(total)
+
+#8.find the key with max value
+#d={"a":10,"b":20,"c":30}
+#max_key=None
+#max_val=-999
+#for k,v in d.items():
+  #  if v>max_val:
+  #      max_val=v
+ #       max_key=k
+#print(max_key,max_val)
+
+
+#9.find the key vth min value
+#d={"a":10,"b":20,"c":30}
+
+
+#10.create a new dict with squared values
+d={"a":2,"b":3}
+newd={}
+for k,v in d.items():
+    newd[k]=v*v
+print(newd)
+    
 
 
 
