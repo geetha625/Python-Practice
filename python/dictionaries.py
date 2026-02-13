@@ -281,11 +281,8 @@
 #     d[k]=d[k]+5
 #print(d)
 
-#5.multiply all values by 2
-#d={"a":10,"b":20,"c":30}
-#for 
 
-#6.count total sum of values
+#5.count total sum of values
 #d={"a":10,"b":20,"c":30}
 #count=0
 #a+b+c==sum
@@ -293,14 +290,14 @@
 #    sum=count+i
 #print(count)
 
-#7.count no of keys&values
+#6.count no of keys&values
 #d={"a":10,"b":20,"c":30}
 #total=0
 #for v in d.values():
 #    total+=v
 #print(total)
 
-#8.find the key with max value
+#7.find the key with max value
 #d={"a":10,"b":20,"c":30}
 #max_key=None
 #max_val=-999
@@ -311,16 +308,159 @@
 #print(max_key,max_val)
 
 
-#9.find the key vth min value
+#8.create a new dict with squared values
+#d={"a":2,"b":3}
+#newd={}
+#for k,v in d.items():
+#    newd[k]=v*v
+#print(newd)
+
+#print all keys & values in one line
 #d={"a":10,"b":20,"c":30}
+#for k,v in d.items():
+ #   print(k,v,end=" ")  
+
+#find max value using loop
+#d={"a":10,"b":20,"c":30}
+#max_key=None
+#max_value=-999
+#for k,v in d.items():
+#    if v>max_value:
+#     max_value=v
+#     max_key=k
+#print(max_key,max_value)
+
+#find min value unsing loop
+#d={"a":10,"b":20,"c":30}
+#min_key=None
+#min_val=999
+#for k,v in d.items():
+#    if v <min_val:
+#        min_val=v
+#        min_key=k
+#print(min_key,min_val)
+
+#add 10 to all values
+#d={"a":10,"b":20,"c":30}
+#for k in d.keys():
+#    d[k]+=10
+#print(d)
+
+#create a square dict
+#a={"a":1,"b":2,"c":3}
+#newd={}
+#for k,v in a.items():
+#    newd[k]=v*v
+#print(newd)
+
+#create a 3 dicts in a dict
+#myfamily={
+ #  "child1":{
+  #    "name":"geetha",
+   #   "year":2004
+  # },
+  # "child2":{
+  #     "name":"swetha",
+  #     "age":20
+  # },
+  # "child3":{
+  #     "name":"swathi",
+  #     "age":18
+  # }
+#}
+#print(myfamily)
+
+#child1={
+  # "name":"geetha",
+ #   "year":2004
+#},
+#child2={
+   #    "name":"swetha",
+  #     "age":20
+ #  },
+#child3={
+   #    "name":"swathi",
+  #     "age":18
+ #  }
+#myfamily={
+   #"child1":child1,
+  # "child2":child2,
+ #  "child3":child3
+
+#}
+#print(myfamily)
+
+#copy a dict and change value in new dict without affecting original
+#d={"a":1,"b":2}
+#newd={}
+#newd=d.copy()
+#newd["a"]=5
+#print(newd)
+
+#check if 2 dicts refer to the same memory
+#d1={"a":1,"b":2}
+#d2=d1
+#print(d2)
+
+#print all subs and marks
+#student={
+#    "marks":{
+#        "math":75,
+#        "science":87
+#    }
+#}
+#print(student)
+
+#increase all marks by 5
+#student={
+   # "marks":{
+   #     "math":75,
+  #      "science":87
+ #   }
+#}
+#for sub in student["marks"]:
+ #   student["marks"][sub]+=5
+#print(student)
+
+#add new sub chem=85
+#student={
+  #  "marks":{
+ #       "math":75,
+#        "science":87
+#    }
+#}
+#student["chem"]=85
+#print(student)
+
+#find sub with highest marks
+#student={
+    #"marks":{
+    #    "math":75,
+   #     "science":87,
+  #      "chem":85
+ #   }
+#}
+#max_sub=None
+#max_val=-999
+#for sub,marks in student["marks"].items():
+   # if marks>max_val:
+  #   max_val=marks
+ #    max_sub=sub
+#print(max_sub,max_val)
+
+#convert nested dict to flat dict
+import copy
+d1={"a":1,"b":{"x":10,"y":20}}
+d2=copy.deepcopy(d1)
+print(d2)
 
 
-#10.create a new dict with squared values
-d={"a":2,"b":3}
-newd={}
-for k,v in d.items():
-    newd[k]=v*v
-print(newd)
+
+
+
+
+
+
     
 
 
