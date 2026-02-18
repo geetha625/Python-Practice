@@ -52,12 +52,55 @@
 #        return "not vowel"
 #print(is_vowel("g"))
 
-def reverse_string(s):
-    rev=""
-    for ch in s:
-        rev=ch+rev
-    return rev
-print(reverse_string("geetha"))
+#def reverse_string(s):
+#    rev=""
+#    for ch in s:
+#        rev=ch+rev
+#    return rev
+#print(reverse_string("geetha"))
+
+#def func_name(fname,lname):
+#    print(fname + lname)
+#func_name("geetha","gandham")
+
+#def palindrome(s):
+#    rev=""
+#    for ch in s:
+#        rev=ch+rev
+#    if rev==s:
+#            return("true")
+#    else:
+#            return("false")
+#print(palindrome("madam"))
+
+#def vowels_consonants(s):
+#    vowels=0
+#    consonants=0
+#    for ch in s:
+#     if ch in "aeiouAEIOU":
+#       vowels+=1
+#     else:
+#       consonants+=1
+#    return vowels,consonants
+#print(vowels_consonants("geetha"))
+
+def challenge(s):
+    digits=0
+    alpha=0
+    special_char=0
+    for i in s:
+        if i.isdigit:
+            digits+=1
+        elif i.isalpha:
+            alpha+=1
+        else:
+            special_char+=1
+    return digits,alpha,special_char
+print(challenge("geetha123@#"))
+
+
+    
+
     
 
 
