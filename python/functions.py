@@ -84,19 +84,66 @@
 #    return vowels,consonants
 #print(vowels_consonants("geetha"))
 
-def challenge(s):
-    digits=0
-    alpha=0
-    special_char=0
-    for i in s:
-        if i.isdigit:
-            digits+=1
-        elif i.isalpha:
-            alpha+=1
-        else:
-            special_char+=1
-    return digits,alpha,special_char
-print(challenge("geetha123@#"))
+#def challenge(s):
+#    digits=0
+#    alpha=0
+#    special_char=0
+#    for i in s:
+#        if i.isdigit:
+#            digits+=1
+#        elif i.isalpha:
+#            alpha+=1
+#        else:
+#            special_char+=1
+#    return digits,alpha,special_char
+#print(challenge("geetha123@#"))
+
+# *args and **kwargs
+# we use when we dont know no of parameters to be passed
+#args are stored in tuples and they are positional arguments
+#kwargs are stored in dictionaries as they are keyword arguments
+
+#create a func that prints all nums using args
+#def nums(*args):
+#     print(args)
+#nums(1,2,3)
+
+#create a func that prints student details using **kwargs
+#def student(**kwargs):
+#    print(kwargs)
+#student(name="geetha",branch="csm",age=20)
+
+#find max num using *args
+#def max_nums(*args):
+#    print(max(args))
+#max_nums(4,2,6)
+
+#output ?  [error]
+#def fun(*args):
+#    print(args[0])
+#fun()
+
+#length ?    [1]
+#def fun(*args):
+#    print(len(args))
+#fun(10)
+
+#sum
+#def sum(*args):
+#    total=0
+#    for i in args:
+#        total+=i
+#    return total
+#print(sum(2,5,3,8))
+
+#max num without max
+def find_max(*args):
+    max_num=args[0]
+    for i in args:
+        if i>max_num :
+         max_num=i
+    return max_num
+print(find_max(3,1,8,5))
 
 
     
