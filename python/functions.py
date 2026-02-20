@@ -137,13 +137,57 @@
 #print(sum(2,5,3,8))
 
 #max num without max
-def find_max(*args):
-    max_num=args[0]
-    for i in args:
-        if i>max_num :
-         max_num=i
-    return max_num
-print(find_max(3,1,8,5))
+#def find_max(*args):
+#    max_num=args[0]
+#    for i in args:
+#        if i>max_num :
+#         max_num=i
+#    return max_num
+#print(find_max(3,1,8,5))
+
+#find avg
+#def avg(*args):
+#    total=0
+#    for i in args:
+#        total+=i
+#    return total/len(args)
+#print(avg(16,34,21))
+
+#find min
+#def min(*args):
+#    min_num=args[0]
+#    for i in args:
+#        if i<min_num:
+#            min_num=i
+#    return min_num
+#print(min(5,8,1,2))
+
+#scope
+# a variable created in the main body is called global variable which belongs to global space
+#x=300
+#def fun():
+#    print(x)
+#fun()
+
+#if you assign a same variable inside and outside the function ,python treat them as separate variables and 
+# it prints the local variable first and global variable later
+#x=300
+#def fun():
+#    x=20
+#    print(x)
+#fun()
+#print(x)
+
+#if you want to create a global variable but you are stuck in local scope, use global keyword
+def fun():
+    global x
+    x=200
+fun()
+print(x)
+
+
+
+    
 
 
     
