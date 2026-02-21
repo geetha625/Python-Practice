@@ -179,11 +179,116 @@
 #print(x)
 
 #if you want to create a global variable but you are stuck in local scope, use global keyword
-def fun():
-    global x
-    x=200
-fun()
-print(x)
+#def fun():
+#    global x
+#    x=200
+#fun()
+#print(x)
+#if you want to change the global variable also refer to global keyword
+
+#python decorators
+# it add some features to another function 
+#def changecase(func):
+#    def myinnerfunc():
+#        return func().upper()
+#    return myinnerfunc()
+#@changecase
+#def myfunc():
+#    return "helloo geethaa"
+#print(myfunc)
+
+# a decorator can be called many times ,just put the decorator on any function you want change
+#def changecase(func):
+#    def myinnerfunc():
+#        return func().lower()
+#    return myinnerfunc()
+#@changecase
+#def myfunc():
+#    return "HELLO GEETHA"
+#@changecase
+#def otherfunc():
+#    return "I AM A STUDENT"
+#print(myfunc)
+#print(otherfunc)
+
+#def changecase(func):
+#    def wrapper():
+#        print("function is starting")
+#        func()
+#        print("function is ending")
+#    return wrapper
+#@changecase
+#def greet():
+#    print("hello python")
+
+#decorator with arguments
+#def changecase(func):
+#    def innerfunc(name):
+#        print("starting")
+#        func(name)
+#        print("ending")
+#    return innerfunc
+#@changecase
+#def myfunc(name):
+#    print("hello",name)
+#myfunc("geetha")
+
+#def decorator(func):
+#    def wrapper(login):
+#        print("login successful")
+#        func(login)
+#    return wrapper
+#@decorator
+#def dashboard(login):
+#    print(login)
+#dashboard("welcome to dashboard")
+
+#def decorator(func):
+#    def wrapper(user):
+#        print("access granted")
+#        func(user)
+#        print("session ended")
+#    return wrapper
+#@decorator
+#def profile(user):
+#    print(user)
+#profile("user profile page")
+
+#def decorator(func):
+#    def wrapper(*args,**kwargs):
+#        print("access granted")
+#        result=func(*args,**kwargs)
+#        print("session ended")
+#        return result
+#    return wrapper
+#@decorator
+#def profile(*args,**kwargs):
+#    print("user profile page")
+#profile()
+
+#def decorator(func):
+#    def wrapper():
+#        print("started")
+#        func()
+#        print("ended")
+#    return wrapper
+#@decorator
+#def show():
+#    print("python rocks")
+#show()
+
+def deco(func):
+    def wrapper():
+        return func()*10
+    return wrapper
+@deco
+def num():
+    return 5
+print(num())
+
+
+
+
 
 
 
