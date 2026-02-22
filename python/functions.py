@@ -277,14 +277,132 @@
 #    print("python rocks")
 #show()
 
-def deco(func):
-    def wrapper():
-        return func()*10
-    return wrapper
-@deco
-def num():
-    return 5
-print(num())
+#def deco(func):
+#    def wrapper():
+#        return func()*10
+#    return wrapper
+#@deco
+#def num():
+#    return 5
+#print(num())
+
+
+
+#lambdaa
+# a lambda is an anonymous functions(a func without name) 
+#it is used for 1 line(short) code but it not faster than nrml functions
+#used in datascience and ML
+#used with builtin funcs lyk map(),filter(),sorted()
+#map() is used to iterate through every item in a LIST
+#filter() is used to take selected or required items
+#sorted() is used to arrange the elements
+
+#syntax:  lambda args:expression
+
+#add=lambda a:a+5
+#print(add(2))
+
+#square=lambda a:a*a
+#print(square(5))
+
+#sub=lambda a,b,c:a-b-c
+#print(sub(4,1,3))
+
+#evenodd=lambda n: "even" if n%2==0 else "odd"
+#print(evenodd(7))
+
+#add=lambda a,b:a*b
+#print(add(2,3))
+
+#RECURSION
+# a RECURSION is a function calling itself meaning you can loop through the data until it reaches the result 
+# if uh write the code wrongly it may never terminate 
+
+#def countdown(n):
+#    if n<=0:
+#        print("done")
+#    else:
+#        print(n)
+#        countdown(n-1)
+#countdown(5)
+
+#every recursion has 2 types: 
+# 1) base case : it is a condition to stop a loop
+# 2) recursive case : the func calling itself with modified argument
+
+#def factorial(n):
+#    if n==1:      #base case
+#        return 1
+#    else:             #recursive case
+#        return n*factorial(n-1)
+#print(factorial(5))
+
+# always make sure a recursive case should meet its basecase
+# without a bse case a recurisive case leads to infinite loop
+
+#def sum(n):
+#    if n==0:
+#     return n
+#    return n+sum(n-1)
+#print(sum(5))
+
+#def fibonacci(n):
+#    if n==0 or n==1:
+#        return n 
+#    return fibonacci(n-1) + fibonacci(n-2)
+#print(fibonacci(6))
+
+#recursion is also used to process a list
+#def sum_lst(lst):
+#    if lst==[]:
+#        return 0
+#    else:
+#        return lst[0]+sum_lst(lst[1:])
+#print(sum_lst([1,2,3,4,5]))
+
+#def print_lst(lst):
+#    if lst==[]:
+#        return
+#    print(lst[0])
+#    print_lst(lst[1:])
+#print_lst([10,20,30])
+
+#def fun(lst):
+#    if lst==[]:
+#        return 0
+#    return lst[-1]+fun(lst[:-1])
+#print(fun([1,2,3])
+
+#def reverse_lst(lst):
+#    if lst==[]:
+#        return 
+#    print(lst[-1])
+#    reverse_lst(lst[:-1])
+#reverse_lst([1,2,3,4,5])
+
+#def mystery(n):
+#    if n==0:
+#        return 1
+#    return n*mystery(n-1)
+#print(mystery(4))
+
+def max_lst(lst):
+    if len(lst)==1:
+        return lst[0]
+    max_rest=max_lst(lst[1:])
+    if lst[0]>max_rest:
+        return lst[0]
+    else:
+        return max_rest
+print(max_lst([3,7,2,9,5]))
+
+ 
+
+
+
+
+
+
 
 
 
