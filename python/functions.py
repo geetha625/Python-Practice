@@ -386,15 +386,45 @@
 #    return n*mystery(n-1)
 #print(mystery(4))
 
-def max_lst(lst):
-    if len(lst)==1:
-        return lst[0]
-    max_rest=max_lst(lst[1:])
-    if lst[0]>max_rest:
-        return lst[0]
-    else:
-        return max_rest
-print(max_lst([3,7,2,9,5]))
+#def max_lst(lst):
+#    if len(lst)==1:
+#        return lst[0]
+#    max_rest=max_lst(lst[1:])
+#    if lst[0]>max_rest:
+#        return lst[0]
+#    else:
+#        return max_rest
+#print(max_lst([3,7,2,9,5]))
+
+# GENERATOR
+# a generator function will pause and resume their execution
+# a generator is an iterator and gives values one by one using YIELD keyword
+# generators are used when 1)large data 2)faster in big prblms 3)infinite sequences and 4) to save memory
+
+#def nums():  
+#    yield 1
+#    yield 2
+#    yield 3
+#x=nums()
+#print(x)
+#print(next(x))
+#print(next(x))
+#print(next(x))
+
+def fibonacci():
+    a,b=0,1
+    while True:
+        a,b=b,a+b
+gen=fibonacci()
+for i in range(10):
+    print(next(gen))
+
+
+
+
+
+
+
 
  
 
