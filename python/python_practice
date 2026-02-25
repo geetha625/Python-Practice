@@ -242,13 +242,28 @@
 #    return largest
 #print(large_num([5,2,1,7]))
 
-def small_num(lst):
-    small=lst[0]
-    for num in lst:
-        if num<small:
-            small=num
-    return small
-print(small_num([9,4,2,8]))
+#def small_num(lst):
+#    small=lst[0]
+#    for num in lst:
+#        if num<small:
+#            small=num
+#    return small
+#print(small_num([9,4,2,8]))
+
+#lst=[1,2,3,4,5]
+#rev=[]
+#for i in lst: #comp:o(n2)
+#    rev=[i]+rev
+#print(rev)
+
+#lst=[1,2,3,4,5]
+#print(lst[::-1])
+
+lst=[10,20,30,40]
+rev=[]
+for i in range(len(lst)-1,-1,-1): # comp:o(n)
+    rev.append(lst[i])
+print(rev)
     
     
         
