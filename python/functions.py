@@ -411,13 +411,48 @@
 #print(next(x))
 #print(next(x))
 
-def fibonacci():
-    a,b=0,1
-    while True:
-        a,b=b,a+b
-gen=fibonacci()
-for i in range(10):
-    print(next(gen))
+#def fibonacci():
+#    a,b=0,1
+#    while True:
+#        a,b=b,a+b
+#gen=fibonacci()
+#for i in range(10):
+#    print(next(gen))
+
+#def fun(a,b,*args):
+#    print(a,b,args)
+#fun(1,2,3,4,5)
+
+# args always collects extra positional args as a tuple
+
+#def fun(a,b=2,*args):
+#    print(a,b,args)
+#fun(1)
+
+# if no extra args are passed though it returns empty tuple
+
+#def fun(a,b=5,*args,**kwargs):
+#    print(a,b,args,kwargs)
+#fun(1,2,3,4,x=10,y=20)
+
+#kwargs stores args as dict
+
+# RULE : positional-default-args-kwargs
+# if args are first python accepts and after args ,all parameters must pass using keyword (but not kwargs) or else runtime error
+
+#def fun(a,b=10,*args,c,d=20,**kwargs):
+#    print(a,b,args,c,d,kwargs)
+#fun(1,2,3,4,c=5,x=6)
+
+def fun(a,b,/,c,d):
+    print(a,b,c,d)
+fun(1,2,c=3,d=4)
+
+
+
+
+
+
 
 
 
