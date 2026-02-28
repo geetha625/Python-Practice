@@ -444,9 +444,19 @@
 #    print(a,b,args,c,d,kwargs)
 #fun(1,2,3,4,c=5,x=6)
 
-def fun(a,b,/,c,d):
-    print(a,b,c,d)
-fun(1,2,c=3,d=4)
+#def fun(a,b,/,c,d):         # / means a & b are positional only 
+#    print(a,b,c,d)
+#fun(1,2,c=3,d=4)
+
+# / means positional only parameters
+
+#def fun(a,/,b,*c):
+#    print(a,b,c)
+#fun(1,2,3)
+
+def fun(a,/,b,*,c):
+    print(a,b,c)
+fun(1,2,3)
 
 
 
