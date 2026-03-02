@@ -259,12 +259,23 @@
 #lst=[1,2,3,4,5]
 #print(lst[::-1])
 
-lst=[10,20,30,40]
-rev=[]
-for i in range(len(lst)-1,-1,-1): # comp:o(n)
-    rev.append(lst[i])
-print(rev)
-    
+#lst=[10,20,30,40]
+#rev=[]
+#for i in range(len(lst)-1,-1,-1): # comp:o(n)
+#    rev.append(lst[i])
+#print(rev)
+
+#a=[1,2,3]
+#b=a
+#b.append(4)
+#print(a)
+
+x=10
+def fun():
+    x=5
+    print(x)
+fun()  
+print(x)  
     
         
 
