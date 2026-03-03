@@ -270,13 +270,37 @@
 #b.append(4)
 #print(a)
 
-x=10
-def fun():
-    x=5
-    print(x)
-fun()  
-print(x)  
-    
+#x=10
+#def fun():
+#    x=5
+#    print(x)
+#fun()  
+#print(x)  
+
+#list : list is a builtin datatype that maintains order and it allows duplicates and it is written in [ ]
+# we can append,pop,remove the items
+#tuple : tuple is a builtin datatype thats maintains order and it contains packing and unpacking and it also allows duplicates and written in ()
+# and it does not support for modifyimg elements
+#set : set is a builtin datatype that is unordered and it doesnt allow duplicates and written in {}
+# dict : dict is a builtin datatype it is in key value pair and written in {}
+
+# == is to check value equality
+# is is used to check memory location
+
+# *args are used when we dont know the exact values and they are positional values stored as tuple
+# **kwargs are used for key value pairs when we dont know the exact values and they come always after *args
+
+#time complexities
+# accessing element in lst : 0(1) ---- use index, direct memory access, const time
+# searching element in lst : o(n) ---- in worst case,we may need to check all elements
+# insert at beginning : all elements shift to right
+# append() : 0(1)
+# pop() : 0(1)
+# pop(0) : o(n)
+
+a=[1,2,3]
+b=a[:]
+print(b)
         
 
 
