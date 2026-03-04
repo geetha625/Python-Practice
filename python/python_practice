@@ -298,9 +298,46 @@
 # pop() : 0(1)
 # pop(0) : o(n)
 
-a=[1,2,3]
-b=a[:]
-print(b)
+#a=[1,2,3]
+#b=a[:]     # creates new list
+#print(b)   # 0(n)
+
+#b=a    --same memory reference
+#b=a[:]  -- new copy (o(n))
+
+#for i in range(n):
+#    for j in range(n):
+#        print(i,j)
+# outer loop n times ,inner loop n times total o(n2)
+
+#for i in range(n):
+#    for j in range(i):
+#        print(i,j)
+# o(n2)  
+
+# multiply loops when nested
+# add loops when sequential
+
+#for i in range(n):         --- fst loop o(n)
+#    print(i)
+#for j in range(n):         --- scnd loop o(n)
+#    print(j)
+   #                        --- total o(n+n)=o(2n) -- in big-o,we ignore const o(n)
+
+#for i in range(n):             --- outer loop  o(n)
+#    for j in range(10):        --- inner loop 10 times
+#        print(i,j)             --- total n*10 =10n    -- ignore const
+
+def isPalindrome(x):
+   if x<0:
+      return False
+   return str(x)==str(x)[::-1]
+print(isPalindrome(121))
+
+
+ 
+
+
         
 
 
