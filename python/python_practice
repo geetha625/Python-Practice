@@ -328,11 +328,36 @@
 #    for j in range(10):        --- inner loop 10 times
 #        print(i,j)             --- total n*10 =10n    -- ignore const
 
-def isPalindrome(x):
-   if x<0:
-      return False
-   return str(x)==str(x)[::-1]
-print(isPalindrome(121))
+#def isPalindrome(x):
+#   if x<0:
+#      return False
+#   return str(x)==str(x)[::-1]
+#print(isPalindrome(121))
+
+#fibonacci 
+#def fibonacci(n):
+#    a=0
+#    b=1
+#    for i in range(n):
+#        print(a,end="")
+#        a,b=b,a+b
+#fibonacci(7)   # 0112358
+
+#fibonacci using recursion           f(n)=f(n-1)+f(n-2)
+class Fibonacci:
+    def fib(self,n):
+        if n<1:
+            return n
+        else:
+            return self.fib(n-1)+self.fib(n-2)
+obj=Fibonacci()
+n=7
+for i in range(n):
+    print(obj.fib(i))                 #0 1 1 2 3 5 8
+
+
+
+
 
 
  
