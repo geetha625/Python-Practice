@@ -454,9 +454,17 @@
 #    print(a,b,c)
 #fun(1,2,3)
 
-def fun(a,/,b,*,c):
-    print(a,b,c)
-fun(1,2,3)
+#def fun(a,/,b,*,c):
+#    print(a,b,c)
+#fun(1,2,3)      #runtime error
+
+#def fun(fname,lname):
+#    print("hi i'm" + "" +fname+ ""+lname )
+#fun(fname=" geetha",lname=" gandham")        # hi i'm geetha gandham
+
+def fun1(fn,ln):
+    print("hlo"+fn+ln)
+fun1(" how"," are you")
 
 
 
