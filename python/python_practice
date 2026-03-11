@@ -344,17 +344,91 @@
 #fibonacci(7)   # 0112358
 
 #fibonacci using recursion           f(n)=f(n-1)+f(n-2)
-class Fibonacci:
-    def fib(self,n):
-        if n<1:
-            return n
-        else:
-            return self.fib(n-1)+self.fib(n-2)
-obj=Fibonacci()
-n=7
-for i in range(n):
-    print(obj.fib(i))                 #0 1 1 2 3 5 8
+#class Fibonacci:
+#    def fib(self,n):
+#        if n<1:
+#            return n
+#        else:
+#            return self.fib(n-1)+self.fib(n-2)
+#obj=Fibonacci()
+#n=7
+#for i in range(n):
+#    print(obj.fib(i))                 #0 1 1 2 3 5 8
 
+# identify the repeated letters in a str
+#text=input("enter a string:")    #programming
+#seen=""
+#duplicates=""
+#for char in text:
+#    if char in seen:
+#        if char not in duplicates:
+#            duplicates+=char
+#    else:
+#        seen+=char
+#print(duplicates)       #rmg
+
+#def product(a,b):
+#    return a*b
+#print(product(6,3))    #18
+
+# swapping 2 variables
+#a,b=5,9
+#a,b=b,a
+#print(a,b)   # 9,5
+
+# sum of n natural nums
+#n=10
+#sum_n=0
+#for i in range(1,n+1):
+#    sum_n+=i
+#print(sum_n)
+
+# product of n nums
+
+#n=6
+#product=1
+#for i in range(1,n+1):
+#    product=product*i
+#print(product)           # 720
+
+#def product(n):
+#    result=1
+#    for i in range(1,n+1):
+#        result=result*i
+#    return result
+#print(product(6))          # 720
+
+# multiplication table
+#n=int(input("enter a num:"))
+
+
+# find smallest , largest , len of arr
+#n=[2,9,5,6]
+#smallest=min(n)
+#largest=max(n)
+#len=len(n)
+#print(smallest)     #2
+#print(largest)       #9
+#print(len)         #4
+
+nums=[10,25,3,40,18]
+min=nums[0]
+max=nums[0]
+for n in nums:
+ if n<min:
+   min=n
+ if n>max:
+   max=n
+len=len(nums)
+print("min num:",min)
+print("max num:",max)
+print("len of nums:",len)
+
+
+
+
+
+ 
 
 
 
