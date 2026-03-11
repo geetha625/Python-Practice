@@ -12,6 +12,9 @@ This repository contains my Python learning journey.
 - tuples
 - sets
 - dictionaries
+- loops
+- patterns
+- functions
 
 ## Purpose
 I am practicing Python basics to build a strong foundation for:
