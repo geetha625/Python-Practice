@@ -30,7 +30,13 @@
 #        print(j,end="")
 #    print()
 
-# reverse pattern printing
-n=5
+# reverse pattern printing         
+'''n=5
+for i in range(1,n+1):
+    print("*"*(n-i+1)) '''       #each iteration to count stars use (n-i+1)
+
+n=4
 for i in range(1,n+1):
     print("*"*(n-i+1))
+
+
