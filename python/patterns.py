@@ -35,8 +35,26 @@
 for i in range(1,n+1):
     print("*"*(n-i+1)) '''       #each iteration to count stars use (n-i+1)
 
-n=4
+'''n=4
 for i in range(1,n+1):
-    print("*"*(n-i+1))
+    print("*"*(n-i+1)) '''
+
+# hallow square pattern
+'''n=5
+for i in range(n):
+    spaces=" "*(n-2)     # spaces between stars
+    if i==0 or i==n-1:    #rows
+        print("*"*n)
+    else:
+        print("*"+spaces+"*")'''
+
+n=4
+for i in range(n):
+    spaces=" "*(n-2)
+    if i==0 or i==n-1:
+        print("*"*n) 
+    else:
+        print("*"+spaces+"*")
+                                 
 
 
