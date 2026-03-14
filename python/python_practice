@@ -411,18 +411,54 @@
 #print(largest)       #9
 #print(len)         #4
 
-nums=[10,25,3,40,18]
-min=nums[0]
-max=nums[0]
-for n in nums:
- if n<min:
-   min=n
- if n>max:
-   max=n
-len=len(nums)
-print("min num:",min)
-print("max num:",max)
-print("len of nums:",len)
+#nums=[10,25,3,40,18]
+#min=nums[0]
+#max=nums[0]
+#for n in nums:
+# if n<min:
+#   min=n
+# if n>max:
+#   max=n
+#len=len(nums)
+#print("min num:",min)
+#print("max num:",max)
+#print("len of nums:",len)
+
+# find the runner from a given arr of scores      -HACKERRANK
+'''n=int(input("enter no of elements:"))                  # 5
+arr=list(map(int,input("enter nums:").split()))       # 2 3 6 6 5
+max1=max(arr)
+i=0
+while i<len(arr):
+    if arr[i]==max1:
+        arr.remove(max1)
+    else:
+        i+=1
+print("second runner is:",max(arr)) '''    # 5
+
+
+ # for the given lst of str find a str which is a palindromic str
+'''lst=["geetha","madam","afifa"]
+for word in lst:
+    rev=""
+    for i in word:
+        rev=i+rev
+    if rev==word:
+        print(word,"is palindrome") '''  # madam is palindrome afifa is palindrome
+
+
+# take a lst of str and count the vowels in each str, if the count of vowels is even then print the str 
+lst=["geetha","pavani","chinnari","durga"]
+for word in lst:
+    vowels="aeiouAEIOU"
+    count=0
+    for ch in word:
+        if ch in vowels:
+         count+=1
+    if count%2==0:
+        print(word)   
+
+
 
 
 
