@@ -448,7 +448,7 @@ for word in lst:
 
 
 # take a lst of str and count the vowels in each str, if the count of vowels is even then print the str 
-lst=["geetha","pavani","chinnari","durga"]
+'''lst=["geetha","pavani","chinnari","durga"]
 for word in lst:
     vowels="aeiouAEIOU"
     count=0
@@ -456,7 +456,46 @@ for word in lst:
         if ch in vowels:
          count+=1
     if count%2==0:
-        print(word)   
+        print(word) '''   # durga  
+
+# leap year
+# if a yr is divisible by 4 and not 100  or a yr divisible by 400
+'''year=int(input("enter a year:"))
+if (year%4==0 and year%100 !=0) or (year%400==0) :
+    print("leap year")
+else:
+    print("not a leap year")''' # 2024 : leap year
+
+# divisible by 5
+'''n=int(input("enter a num:"))
+if n%5==0:
+    print(n,"is divisible by 5")
+else:
+    print(n,"is not divisible by 5")'''     # 5 is divisible by 5 , 8 is not divisible by 5
+
+# remove duplicates
+'''lst=[1,2,2,3,4,4,5]
+result=[]
+for i in lst:
+    if i not in result:
+        result.append(i)
+print(result)'''    # [1,2,3,4,5]
+
+# first non repeating char
+'''s="geetha"
+for i in s:
+    if s.count(i)==1:
+        print(i)
+    break '''                # g
+
+s=[0,1,0,3,12]
+result=[]
+for i in s:
+    if i!=0:
+        s.append(i)
+print(result)
+
+
 
 
 
