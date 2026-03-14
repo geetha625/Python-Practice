@@ -48,13 +48,39 @@ for i in range(n):
     else:
         print("*"+spaces+"*")'''
 
-n=4
+'''n=4
 for i in range(n):
     spaces=" "*(n-2)
     if i==0 or i==n-1:
         print("*"*n) 
     else:
-        print("*"+spaces+"*")
+        print("*"+spaces+"*")'''
+
+# same num in row             - row num = num to print
+'''n=4
+for i in range(1,n+1):
+    for j in range(i):
+        print(i,end=" ")
+    print()
+# output:
+1
+2 2 
+3 3 3
+4 4 4 4 '''
+
+n=5
+for i in range(1,n+1):
+    for j in range(i):
+        print(i,end=" ")
+    print()
+# output :
+'''1
+2 2 
+3 3 3
+4 4 4 4 
+5 5 5 5 5'''
+
+
                                  
 
 
