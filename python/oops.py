@@ -169,7 +169,7 @@ c.increment()
 c.decrement()
 print(c.startvalue)'''      #1
 
-class Book:
+'''class Book:
     def __init__(self,title,author):
         self.title=title
         self.author=author
@@ -177,7 +177,60 @@ class Book:
         print("title:",self.title)
         print("author:",self.author)
 b=Book("python basics","geetha")
-b.info()
+b.info()'''                                # name:python basics author:geetha
+
+'''class Car:
+     def __init__(self,brand):
+         self.brand=brand
+     def show(self):
+         print(self.brand)
+c1=Car("Ford")
+c1.show() '''  # Ford
+
+# CLASS METHOD
+
+# in a class, we usually write instance methods  ( instance is the object created from a class)
+# for class methods, we use @classmethod 
+# ex: 
+'''@classmethod
+def method_name(cls):'''
+# @classmethod is a decorator , cls is class
+
+# syntax
+'''class Student:
+  school="DTS school"
+  @classmethod
+  def show_school(cls):
+   print(cls.school)
+Student.show_school() '''     # DTS school
+
+# we use class methods when we want to work with class variables
+'''class Student:
+    school="XYZ school"
+    def __init__(self,name):
+        self.name=name
+    @classmethod
+    def change_school(cls,new_name):
+        cls.school=new_name
+print(Student.school)                  #XYZ school
+Student.change_school("ABC school")
+print(Student.school)'''            # ABC school
+# self :
+# - refers to object , used in normal methods
+# cls :
+# - refers to class , used in class methods
+
+class Car:
+    wheels=4
+    @classmethod
+    def show(cls):
+        print(cls.wheels)
+Car.show()
+
+
+
+
+
 
 
 
