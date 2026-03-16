@@ -220,12 +220,91 @@ print(Student.school)'''            # ABC school
 # cls :
 # - refers to class , used in class methods
 
-class Car:
+'''class Car:
     wheels=4
     @classmethod
     def show(cls):
-        print(cls.wheels)
-Car.show()
+        print(cls.wheels)    # cls.wheels access the cls variables wheels
+Car.show() '''              # 4
+
+'''class Student:
+    school="ABC school"
+    def __init__(self,name):
+        self.name=name
+    @classmethod
+    def show_school(cls):
+        print(cls.school)
+Student.show_school() '''        # ABC school
+
+'''class Bank:
+    bank_name="RBC"
+    def __init__(self,customer_name):
+        self.customer_name=customer_name
+    @classmethod
+    def change_bank_name(cls,new_name):
+        cls.bank_name=new_name
+print(Bank.bank_name)
+Bank.change_bank_name("HDFC")           
+print(Bank.bank_name)'''              # RBC HDFC
+
+'''class College:
+    college_name="MVSR"
+    def __init__(self,student_name):
+        self.student_name=student_name    # BELONGS TO EACH OBJECT
+    @classmethod
+    def show_college(cls):
+        print(cls.college_name)      # BELONGS TO THE CLASS
+College.show_college() '''             # MVSR
+
+# STATIC METHOD -no self,no cls
+# it does not use object data or class data
+# used for utility logic related to the class
+
+# SYNTAX :
+'''class MathOperations:
+    @staticmethod
+    def add(a,b):
+        return a+b
+print(MathOperations.add(5,3))'''    # 8
+
+'''class Employee:
+    @staticmethod
+    def is_adult(age):
+        return age>=18
+print(Employee.is_adult(20))'''          # True
+
+# DIFFERENCES
+
+# instances method - uses objects data
+#def show(self):
+# class method - uses class data
+#@classmethod
+#def change(cls):
+# static method - uses neither
+#@staticmethod:
+#def check(x):
+
+'''class Temperature:
+    @staticmethod
+    def celsius_to_fahrenheit(c):
+        f=(c*9/5)+32
+        return f
+print(Temperature.celsius_to_fahrenheit(25)) '''       # 77
+
+class Demo:
+    #staticmethod
+    def greet():
+        print("hello")
+print(Demo.greet())
+
+    
+
+
+
+
+
+
+
 
 
 
