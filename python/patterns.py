@@ -88,18 +88,67 @@ for i in range(1,n+1):
     for j in range(1,i+1):
         print(j,end=" ")
     print()
+output :
 1 
 1 2 
 1 2 3
 1 2 3 4 '''
 
-n=5
+'''n=5
 for i in range(1,n+1):
     for j in range(1,i+1):
         print(j,end=" ")
     print()
+output :
+1 
+1 2 
+1 2 3
+1 2 3 4
+1 2 3 4 5 '''
 
+# DECREASING NUMBER PATTERN 
 
-                                 
+# outer loops - rows
+# inner loop - numbers printed
 
+'''n=5
+for i in range(n,0,-1):
+    for j in range(1,i+1):
+        print(j,end=" ")
+    print()
+OUTPUT :
+1 2 3 4 5 
+1 2 3 4 
+1 2 3
+1 2
+1       '''
+
+'''n=5
+for i in range(n,0,-1):
+    for j in range(5,5-i,-1):
+        print(j,end=" ")
+    print()
+OUTPUT :
+5 4 3 2 1 
+5 4 3 2 
+5 4 3
+5 4
+5      '''
+
+'''n=5
+for i in range(1,n+1):
+    for j in range(5,5-i,-1):
+        print(j,end=" ")
+    print()
+OUTPUT :                                
+5 
+5 4 
+5 4 3
+5 4 3 2
+5 4 3 2 1 '''
+
+for i in range(1,5):
+    for j in range(i,0,-1):
+        print(j,end=" ")
+    print()
 
