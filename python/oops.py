@@ -362,14 +362,155 @@ class Dog(Animal):
 d=Dog()
 d.speak() '''       # overrides  # dog barks
 
-class Shape:
-    def area(self):
-        print("calculating area")
-class Square(Shape):
-    def area(self):
-        print("area of square")
-s=Square()
-s.area()
+#class Shape:
+#    def area(self):
+#        print("calculating area")
+#class Square(Shape):
+#    def area(self):
+#        print("area of square")
+#s=Square()
+#s.area()         # area of square
+
+# SUPER() in inheritance
+
+# super() is used to call the PARENT CLASS from the child class
+# we need super() bcoz when the child class has its own __init__,the parent __init__ does NOT run AUTOMATICALLY so we super() to call it
+
+# example
+#class Person:
+#    def __init__(self,name):
+#        self.name=name
+#class Student(Person):
+#    def __init__(self,name,age):
+#        self.age=age
+#s=Student("geetha",21)
+#print(s.name)                # error bc0z name was not assigned
+
+# example with super()
+#class Person:
+# def __init__(self,name):
+#    self.name=name
+#class Student(Person):
+#  def __init__(self,name,age):
+#    super().__init__(name)
+#    self.age=age
+#s=Student("geetha",20)
+#print(s.name)              # geetha
+#print(s.age)               # 20
+
+# when to use :
+# to reuse parent logic
+# especially __init__
+# when overriding a method but still want parent behaviour
+
+#class Vehicle:
+#    def start(self):
+#        print("vehicle started")
+#class Car(Vehicle):
+#    def start(self):
+#        super().start()
+#        print("car started")
+#c=Car()                            
+#c.start()
+# OUTPUT :
+"vehicle started"
+"car started"
+
+# MULTILEVEL INHERITENCE
+#class A:
+#    def showA(self):
+#        print("class A")
+#class B(A):
+#    pass
+#class C(B):
+#    pass
+#c=C()
+#c.showA()         # class A
+
+# MULTIPLE INHERITANCE 
+# a class can inherit from more than one parent class
+# one child : multiple parents
+
+# example :
+#class A:
+#    def showA(self):
+#        print("class A")
+#class B:
+#    def showB(self):
+#        print("class B")
+#class C(A,B):
+#    pass
+#c=C()
+#c.showA()        # class A
+#c.showB()        # class B
+" c inherited from A ,B "
+
+# NOTE :if both parent classes have same method name then python follows MRO(METHOD RESOLUTION ORDER) means it checks from LEFT to RIGHT ORDER
+# example
+#class A:
+#    def show(self):
+#        print("A")
+#class B:
+#   def show(self):
+#        print("B")
+#class C(A,B):
+#    pass
+#c=C()
+#c.show()         # A
+
+#class Father:
+#    def skills(self):
+#        print("gardening")
+#class Mother:
+#    def skills(self):
+#        print("cooking")
+#class Child(Father,Mother):
+#    pass
+#c=Child()
+#c.skills()          # gardening
+
+# ENCAPSULATION :
+# HIDING DATA and CONTROLLING ACCESS to it
+
+" types in python"
+#type        Syntax       Access
+#public       name          anywhere
+#protected    _name         inside class and child
+#private      __name        only inside class
+
+# example :
+#class Student:
+#    def __init__(self):
+#        self.name="geetha"        # public
+#        self._age=20              # protected
+#        self.__marks=88           # private
+#s=Student()
+#print(s.name)
+#print(s._age)
+#print(s._Student__marks)      # to access private
+#OUTPUT :
+#"geetha"
+#20
+#88
+
+class BankAccount:
+    def __init__(self,balance):
+        self.__balance=balance
+    def deposit(self,amount):
+        self.__balance+=amount
+    def show_balance(self):
+        print(self.__balance)
+b=BankAccount(0)
+b.deposit(1000)
+b.show_balance()
+        
+
+
+
+
+
+
+
 
 
     
