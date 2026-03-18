@@ -291,11 +291,90 @@ print(Employee.is_adult(20))'''          # True
         return f
 print(Temperature.celsius_to_fahrenheit(25)) '''       # 77
 
-class Demo:
+'''class Demo:
     #staticmethod
     def greet():
         print("hello")
-print(Demo.greet())
+print(Demo.greet()) '''         # hello none
+
+# INHERITANCE
+
+# INHERITANCE means one class can use the properties and methods of another class
+# it helps to reuse the code
+# like parent class - gives features, child class - uses those features
+# EXAMPLE : dog, car
+
+# SYNTAX :
+'''class parent:
+    ....
+class child(parent):     # the child class inherits from the parent class
+    ....'''
+
+'''class Animal:
+    def speak(self):
+        print("animal makes sound")      # animal makes sound
+class Dog(Animal):
+    pass
+d=Dog()
+d.speak()''' 
+
+'''class Person:
+    def greet(self):
+        print("hello")
+class Student(Person):
+    def study(self):
+        print("studying")
+s=Student()
+s.greet()               # hello
+s.study() '''              # studying
+
+# CHILD CLASS ADDING ITS OWN METHOD
+# a CHILD class can use parent methods and have its own methods
+
+'''class Animal:
+    def speak(self):
+        print("animal makes sound")
+class Dog(Animal):
+    def bark(self):
+        print("dog barks")
+d=Dog()
+d.speak()          # inehrited method                               # animal makes sound
+d.bark()'''        # its own method                                 # dog barks
+
+'''class Vehicle:
+    def start(self):
+        print("vehicle started")
+class Car(Vehicle):
+    def drive(self):
+        print("car is driving")
+c=Car()
+c.start()          # vehicle started
+c.drive() '''         # car is driving
+
+# METHOD OVERRIDING
+# sometimes the child class changes the behaviour of the parent method
+'''class Animal:
+    def speak(self):
+        print("animal makes sound")
+class Dog(Animal):
+    def speak(self):
+        print("dog barks")
+d=Dog()
+d.speak() '''       # overrides  # dog barks
+
+class Shape:
+    def area(self):
+        print("calculating area")
+class Square(Shape):
+    def area(self):
+        print("area of square")
+s=Square()
+s.area()
+
+
+    
+
+
 
     
 
