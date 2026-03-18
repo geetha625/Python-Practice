@@ -28,14 +28,20 @@
 #print(count)
 
 #check if a num is palindrome using loop
-num=121
-original=num
-rev=0
-while num>0:
-    digit=num%10
-    rev=rev*10+digit
-    num=num//10
-if original==rev:
-    print("palindrome")
-else:
-    print("not a palindrome")
+#num=121
+#original=num
+#rev=0
+#while num>0:
+#    digit=num%10
+#    rev=rev*10+digit
+#    num=num//10
+#if original==rev:
+#    print("palindrome")
+#else:
+#    print("not a palindrome")
+
+n=5
+for i in range(1,n+1):
+    print(i,end=" ")
+
+
