@@ -157,10 +157,56 @@ OUTPUT :
 3 2 1
 4 3 2 1 '''
 
-n=4
+# 
+'''n=4
 num=1
 for i in range(1,n+1):
     for j in range(1,i+1):
         print(num,end=" ")
         num+=1
     print()
+OUTPUT :        # for continuous patterns, use separate var num
+1 
+2 3 
+4 5 6 
+7 8 9 10 '''
+
+'''n=5
+num=1
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        print(num,end=" ")
+        num+=1
+    print()
+OUTPUT:
+1 
+2 3 
+4 5 6 
+7 8 9 10 
+11 12 13 14 15 '''
+
+# PYRAMID PATTERN
+
+'''n=5
+for i in range(1,n+1):
+    for j in range(n-i):     # spaces
+        print(" ",end=" ")
+    for j in range(i):
+        print("*",end=" ")
+    print()
+OUTPUT:
+        * 
+      * * 
+    * * *
+  * * * *
+* * * * * '''
+
+n=5
+for i in range(1,n+1):
+    for j in range(i):
+        print("*",end=" ")
+    for j in range(n-i):
+        print(" ",end=" ")
+    print()
+
+
