@@ -40,8 +40,134 @@
 #else:
 #    print("not a palindrome")
 
-n=5
-for i in range(1,n+1):
-    print(i,end=" ")
+#n=5
+#for i in range(1,n+1):
+#    print(i,end=" ")       # 1 2 3 4 5
+
+# STRING METHOD
+
+#n="123"
+#rev=""
+#for i in n:
+#    rev=i+rev
+#print(rev)
+
+"NUMBER METHOD"   "while loop"
+
+#n=123
+#rev=0
+#while n>0:
+#    digit=n%10
+#    rev=rev*10+digit
+#    n=n//10
+#print(rev)     #321
+
+"PALINDROME USING WHILE LOOP"
+
+#n=121
+#original=n
+#rev=0
+#while n>0:
+#    digit=n%10
+#    rev=rev*10+digit
+#    n=n//10
+#if original==rev:
+#   print(True)
+#else:
+#   print(False)   # True
+
+"ARMSTRONG NUMBER"
+#n=153
+#original=n
+#sum_digits=0
+#while n>0:
+#    digit=n%10
+#    sum_digits+=digit**3
+#    n=n//10
+#if original==sum_digits:
+#    print(True)
+#else:
+#    print(False)       # True
+
+" find largest number"
+#n=58392
+#large_num=0
+#while n>0:
+#    digit=n%10
+#    if digit>large_num:
+#        large_num=digit
+#    n=n//10
+#print(large_num)  # 9
+
+# NOTE: for numbers problems must use 
+# digit extraction(digit=n%10) for separating nums
+# remove digit(n=n//2)
+
+# SUM OF DIGITS
+
+#n=458
+#sum_=0
+#while n>0:
+#    digit=n%10
+#    sum_+=digit
+#    n=n//10
+#print(sum_)          # 17
+
+# COUNT DIGIT
+
+#n=90210
+#count_=0
+#while n>0:
+#    digit=n%10
+#    count_+=1
+#    n=n//10
+#print(count_)       # 5
+
+# REVERSE NUMBER
+
+#n=305
+#rev=0
+#while n>0:
+#    digit=n%10
+#    rev=rev*10+digit
+#    n=n//10
+#print(rev)         # 503
+
+# PALINDROME NUMBER
+
+#n=1221
+#original=n
+#rev=0
+#while n>0:
+#    digit=n%10
+#    rev=rev*10+digit
+#    n=n//10
+#if original==rev:
+#    print(True)
+#else:
+#    print(False)       # True
+
+# EVEN OR ODD
+
+n=76421
+even_digit=0
+odd_digit=0
+while n >0:
+    digit=n%10
+    if digit%2==0:
+        even_digit+=1
+    else:
+        odd_digit+=1
+    n=n//10
+print("even : ",even_digit)
+print("odd: ",odd_digit)
+
+
+
+
+
+
+
+    
 
 
