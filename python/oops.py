@@ -493,16 +493,72 @@ d.speak() '''       # overrides  # dog barks
 #20
 #88
 
-class BankAccount:
-    def __init__(self,balance):
-        self.__balance=balance
-    def deposit(self,amount):
-        self.__balance+=amount
-    def show_balance(self):
-        print(self.__balance)
-b=BankAccount(0)
-b.deposit(1000)
-b.show_balance()
+#class BankAccount:
+#    def __init__(self,balance):
+#        self.__balance=balance
+#    def deposit(self,amount):
+#        self.__balance+=amount
+#    def show_balance(self):
+#        print(self.__balance)
+#b=BankAccount(0)
+#b.deposit(1000)
+#b.show_balance()           # 1000
+
+# POLYMORPHISM 
+#    same method name but different behaviour ( METHOD OVERRIDING)
+
+#class Animal:
+#    def speak(self):
+#        print("animal sound")
+#class Dog(Animal):
+#    def speak(self):
+#        print("dog barks")
+#class Cat(Animal):
+#    def speaks(self):
+#        print("cat meows")
+#d=Dog()
+#c=Cat()
+#d.speak()   # dog barks
+#c.speak()    # animal sound
+
+#def add(a,b):
+#    return a+b
+#print(add(2,3))           # 5
+#print("hi","geetha")      # hi geetha
+
+#class Shape:
+#    def area(self):
+#        pass
+#class Circle(Shape):
+#    def area(self):
+#        print("circle area")
+#class Square(Shape):
+#    def area(self):
+#        print("square area")
+#Shapes=[Circle(),Square()]
+#for s in Shapes:
+#    s.area()
+# OUTPUT:
+"circle area"
+"square area"
+
+class Bird:
+    def Fly(self):
+        print("some birds can fly")
+class Sparrow(Bird):
+    def Fly(self):
+        print("sparrow flies")
+class Ostrich(Bird):
+    def Fly(self):
+        print("ostrich cannot fly")
+birds=[Sparrow(),Ostrich()]
+for b in birds:
+    b.Fly()
+
+
+
+
+
         
 
 
