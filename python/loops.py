@@ -149,18 +149,50 @@
 
 # EVEN OR ODD
 
-n=76421
-even_digit=0
-odd_digit=0
-while n >0:
+#n=76421
+#even_digit=0
+#odd_digit=0
+#while n >0:
+#    digit=n%10
+#    if digit%2==0:
+#        even_digit+=1
+#    else:
+#        odd_digit+=1
+#    n=n//10
+#print("even : ",even_digit)       # 3
+#print("odd: ",odd_digit)          # 2
+
+'''n=482
+while n>0:
     digit=n%10
-    if digit%2==0:
-        even_digit+=1
-    else:
-        odd_digit+=1
+    print(digit)
     n=n//10
-print("even : ",even_digit)
-print("odd: ",odd_digit)
+OUTPUT:
+2
+8
+4'''
+
+# COUNT DIGITS > 5
+
+#n=76952
+#count_=0
+#while n>0:
+#    digit=n%10
+#    if digit>5:
+#        count_+=1
+#    n=n//10
+#print(count_)    # 3
+
+# PRODUCT
+
+n=234
+product_=1
+while n>0:
+    digit=n%10
+    product_*=digit
+    n=n//10
+print(product_)
+
 
 
 
