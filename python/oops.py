@@ -542,7 +542,7 @@ d.speak() '''       # overrides  # dog barks
 "circle area"
 "square area"
 
-class Bird:
+'''class Bird:
     def Fly(self):
         print("some birds can fly")
 class Sparrow(Bird):
@@ -551,11 +551,167 @@ class Sparrow(Bird):
 class Ostrich(Bird):
     def Fly(self):
         print("ostrich cannot fly")
-birds=[Sparrow(),Ostrich()]
-for b in birds:
+birds=[Sparrow(),Ostrich()]           # for collection of diff objects
+for b in birds:                  # calls same method
     b.Fly()
+OUTPUT:
+"sparrow flies"
+"ostrich cannot fly" '''
 
+# PRACTICE QUES
 
+# 1
+class Student:
+    def __init__(self,name):
+        self.name=name
+    def display(self):
+        print(self.name)
+s=Student("geetha")
+s.display()            # geetha
+
+# 2
+class Employee:
+    def __init__(self,salary):
+        self.salary=salary
+    def increase_salary(self,amount):
+        self.salary+=amount
+    def display(self):
+        print(self.salary)
+e=Employee(20000)
+e.increase_salary(5000)
+e.display()               # 25000
+
+# 3
+class Rectangle:
+    def __init__(self,length,width):
+        self.length=length
+        self.width=width
+    def area(self):
+        return self.length*self.width
+    def perimeter(self):
+        return 2*(self.length+self.width)
+r=Rectangle(4,3)
+print(r.area())                      # 12
+print(r.perimeter())                 # 14
+
+# use return when you want to send a value back
+# use print() when you want to display inside the method
+
+# 4 STUDENT RESULT
+class Student:
+    def __init__(self,name,marks):
+        self.name=name
+        self.marks=marks
+    def is_pass(self):
+        if self.marks>=40:
+            return "pass"
+        else:
+            return "fail"
+s=Student("geetha",75)
+print(s.is_pass())                    # pass
+
+# 5 STUDENT GRADE 
+class Student:
+    def __init__(self,name,marks):
+        self.name=name
+        self.marks=marks
+    def get_grade(self):
+        if self.marks>=90:
+            return "A"
+        elif self.marks>=75:
+            return "B"
+        elif self.marks>=50:
+            return "C"
+        else:
+            return "fail"
+s=Student("geetha",82)
+print(s.get_grade())                    # B
+
+# 6 BANK ACCOUNT
+class BankAccount:
+    def __init__(self,balance):
+        self.balance=balance
+    def deposit(self,amount):
+        self.balance+=amount
+    def withdraw(self,amount):
+        if amount>self.balance:
+            return "insufficient balance"
+        else:
+            self.balance-=amount
+    def display(self):
+        print(self.balance)
+b=BankAccount(1000)
+b.deposit(500)
+b.withdraw(200)
+b.display()                      # 1300
+
+# 7 COUNT NO. OF OBJECTS
+class Student:
+     count=0
+     def __init__(self,name):
+         self.name=name
+         Student.count+=1
+     def display(self):
+         print(self.name)
+     @classmethod                       # when we want to work with cls variables
+     def total_students(cls):
+         print("total students:",cls.count)
+s1=Student("geetha")
+s2=Student("avinash")
+s3=Student("pavani")
+s1.display()
+s2.display()
+s3.display()  
+Student.total_students()                        
+# OUTPUT:
+'''geetha
+avinash
+pavani
+total students: 3 '''
+
+# 8   UPDATE STUDENT MARKS
+class Student:
+    def __init__(self,name,marks):
+        self.name=name
+        self.marks=marks
+    def update_marks(self,new_marks):
+        self.marks=new_marks
+    def display(self):
+        print(self.name)
+        print(self.marks)
+s1=Student("geetha",82)
+s1.display()
+s1.update_marks(90)
+s1.display()                     # 90
+
+# 9 __str__ METHOD
+class Employee:
+    def __init__(self,name,salary):
+        self.name=name
+        self.salary=salary
+    def __str__(self):
+        return "employee name: "+self.name+"\nsalary: "+str(self.salary)
+e1=Employee("geetha",48000)                 # geetha
+print(e1)                                   # 48000
+
+# 10 FIND HIGHEST SALARY
+class Employee:
+    def __init__(self,name,salary):
+        self.name=name
+        self.salary=salary
+    def display(self):
+        print(self.name)
+        print(self.salary)
+e1=Employee("geetha",50000)
+e2=Employee("ram",630000)
+e3=Employee("anu",75000)    
+if e1.salary>e2.salary and e1.salary>e3.salary:
+    highest=e1
+elif e2.salary>e1.salary and e3.salary>e2.salary:
+    highest=e2
+else:
+    highest=e3
+print("highest salary:",highest.name,highest.salary)
 
 
 
