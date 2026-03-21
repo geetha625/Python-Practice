@@ -462,9 +462,76 @@
 #    print("hi i'm" + "" +fname+ ""+lname )
 #fun(fname=" geetha",lname=" gandham")        # hi i'm geetha gandham
 
-def fun1(fn,ln):
-    print("hlo"+fn+ln)
-fun1(" how"," are you")
+#def fun1(fn,ln):
+#    print("hlo"+fn+ln)
+#fun1(" how"," are you")
+
+# SUM OF DIGITS
+
+#def sum_of_digits(n):
+#    sum_=0
+#    while n>0:
+#        digit=n%10
+#        sum_+=digit   
+#        n=n//10
+#    return sum_
+#print(sum_of_digits(458))        # 17
+
+# REVERSE A NUMBER
+
+#def reverse_num(n):
+#    rev=0
+#    while n>0:
+#        digit=n%10
+#        rev=rev*10+digit
+#        n=n//10
+#    return rev
+#print(reverse_num(458))           # 854
+
+# CHECK PALINDROME
+
+#def check_palindrome(n):
+#    original=n
+#    rev=0
+#    while n>0:
+#        digit=n%10
+#        rev=rev*10+digit
+#        n=n//10
+#    return original==rev
+#print(check_palindrome(458))   # False
+
+# EVEN ODD
+
+#def even_odd(n):
+#    even_=0
+#    odd_=0
+#    while n>0:
+#        digit=n%10
+#        if digit%2==0:
+#            even_+=1
+#        else:
+#            odd_+=1
+#        n=n//10
+#    return even_,odd_
+#print(even_odd(458))      2,3
+
+# FIND LARGEST NUM
+
+def largest_num(n):
+    large_=0
+    while n>0:
+        digit=n%10
+        if digit>large_:
+            large_=digit
+        n=n//10
+    return large_
+print(largest_num(58392))
+        
+
+
+
+
+
 
 
 
