@@ -147,6 +147,27 @@
 #   elif i > second and i!=largest:second=i
 #print(second)
 
+''' METHODS
+1 .append()
+2 .insert()
+3 .pop()
+4 .romove()
+5 .sort()
+6 .count()
+7 .index()
+8 .reverse() '''
 
+'''- lists  are used to store multiple values in a single variable 
+- it is mutable,ordered and allows duplicate members '''
+
+fruits=["apple","cherry","mango"]
+fruits.append("banana")     # ['apple', 'cherry', 'mango', 'banana']
+fruits.insert(1,"melon")     # ['apple', 'melon', 'cherry', 'mango', 'banana']
+fruits.sort()           # ['apple', 'banana', 'cherry', 'mango', 'melon']
+fruits.pop()           # ['apple', 'banana', 'cherry', 'mango']
+fruits.remove("apple")     # ['banana', 'cherry', 'mango']
+fruits.count("mango")
+fruits.reverse()    # ['mango', 'cherry', 'banana']
+print(fruits.count("mango"))
 
 
