@@ -711,7 +711,132 @@ elif e2.salary>e1.salary and e3.salary>e2.salary:
     highest=e2
 else:
     highest=e3
-print("highest salary:",highest.name,highest.salary)
+print("highest salary:",highest.name,highest.salary)                  # anu 75000
+
+# 11 CLASS VARIABLE AND AVERAGE CALCULATION
+class Student:
+    total_marks=0
+    count=0
+    def __init__(self,name,marks):
+        self.name=name
+        self.marks=marks
+        Student.total_marks+=marks
+        Student.count+=1
+    @classmethod
+    def average_marks(cls):
+        avg=cls.total_marks/cls.count
+        print("average marks:",avg)
+s1=Student("geetha",88)
+s2=Student("ram",75)
+s3=Student("anu",92)    
+Student.average_marks()                        # average marks: 85.0
+
+# 12 INHERITANCE
+class Person:
+    def __init__(self,name):
+        self.name=name
+    def display_name(self):
+        print(self.name)
+class Student(Person):
+    def __init__(self,name,marks):
+        self.name=name
+        self.marks=marks
+    def display_marks(self):
+        print(self.marks)
+s=Student("geetha",88)
+s.display_name()           # geetha
+s.display_marks()           # 88
+
+# use super()
+class Person:
+    def __init__(self,name):
+        self.name=name
+    def display_name(self):
+        print(self.name)
+class Student(Person):
+    def __init__(self,name,marks):
+        super().__init__(name)
+        self.marks=marks
+    def display_marks(self):
+        print(self.marks)
+s=Student("geetha",88)
+s.display_name()           # geetha
+s.display_marks()          # 88
+
+# 13 POLYMORPHISM ( METHOD OVERRIDING)
+class Animal:
+    def sound(self):
+        print("animal makes sound")
+class Dog(Animal):
+    def sound(self):
+        print("dog barks")
+a=Animal()
+d=Dog()
+a.sound()           # animal makes sound
+d.sound()           # dog barks
+
+# 14 POLYMORPHISM WITH MULTIPLE CLASSES
+class Shape():
+    def area(self):
+        print("area of shape")
+class Rectangle(Shape):
+    def __init__(self,length,width):
+        self.length=length
+        self.width=width
+    def area(self):
+        print("area of rectangle:",self.length*self.width)
+class Circle(Shape):
+    def __init__(self,r):
+        self.r=r
+    def area(self):
+        print("area of circle:",3.14*self.r*self.r)
+r=Rectangle(4,3)
+c=Circle(2)
+r.area()            # 12
+c.area()            # 12.56
+
+# 15 ENCAPSULATION ( PRIVATE VARIABLE )
+class BankAccount:
+    def __init__(self,balance):
+        self.__balance=balance
+    def deposit(self,amount):
+        self.__balance+=amount
+    def withdraw(self,amount):                
+        self.__balance-=amount     # OR if amount>self.__balance:
+                                     #      print("insufficient balance")
+                                     #  else:
+                                     #      self.balance-=amount
+    def display_balance(self):
+        print(self.__balance)
+b=BankAccount(3000)
+b.deposit(2000)
+b.withdraw(2500)
+b.display_balance()           # 2500
+
+# 16 BANK ACCOUNT WITH TRANSACTION HISTORY
+class BankAccount:
+    def __init__(self,balance):
+        self.__balance=balance
+        self.transactions=[]
+    def deposit(self,amount):
+        self.__balance+=amount
+        self.transactions.append("deposited "+str(amount))  
+    def withdraw(self,amount):
+        if amount>self.__balance:
+            print("insufficient balance")
+        else:
+            self.__balance-=amount
+            self.transactions.append("withdrew "+str(amount))
+    def display_balance(self):
+        print(self.__balance)
+    def show_transactions(self):
+        for t in self.transactions:
+            print(t)
+b=BankAccount(4000)
+b.deposit(2000)
+b.withdraw(500)
+b.display_balance() 
+b.show_transactions()
 
 
 
