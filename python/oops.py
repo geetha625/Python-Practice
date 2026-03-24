@@ -832,11 +832,53 @@ class BankAccount:
     def show_transactions(self):
         for t in self.transactions:
             print(t)
-b=BankAccount(4000)
+b=BankAccount(4000)      
 b.deposit(2000)
 b.withdraw(500)
-b.display_balance() 
-b.show_transactions()
+b.display_balance()         # 5500
+b.show_transactions()       # deposited 2000
+                            # withdrew 500
+
+''' transfer() means acc A sends amount to acc B '''
+
+class BankAccount:
+    def __init__(self,balance):
+        self.__balance=balance
+    def transfer(self,other,amount):
+        if amount<=self.__balance:
+            self.__balance-=amount
+            other.__balance+=amount
+    def display_balance(self):
+        print(self.__balance)
+a1=BankAccount(5000)
+a2=BankAccount(2000)
+a1.transfer(a2,1000)
+a1.display_balance()          # 4000
+a2.display_balance()           # 3000
+
+# 17 transfer 
+class BankAccount:
+    def __init__(self,balance):
+        self.__balance=balance
+    def deposit(self,amount):
+        self.__balance+=amount
+    def withdraw(self,amount):
+        if self.__balance<amount:
+            print("insufficient balance")
+        else:
+            self.__balance-=amount
+    def transfer(self,other_account,amount):
+        if amount<=self.__balance:
+            self.__balance-=amount
+            other_account.__balance+=amount
+    def display_balance(self):
+        print(self.__balance)
+a1=BankAccount(6000)
+a2=BankAccount(4000)
+a1.transfer(a2,1500)
+a1.display_balance()
+a2.display_balance()
+
 
 
 
