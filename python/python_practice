@@ -488,12 +488,28 @@ for i in s:
         print(i)
     break '''                # g
 
-s=[0,1,0,3,12]
+'''s=[0,1,0,3,12]
 result=[]
 for i in s:
     if i!=0:
         s.append(i)
-print(result)
+print(result)'''
+
+s="GeeksforGeeks"
+res=[]
+for i in s:
+    if s.count(i)>1 and i not in res:
+        res.append(i)
+print(res)             # ['G', 'e', 'k', 's']
+
+s="GeeksforGeeks"
+freq={}
+res=[]
+for ch in s:
+    freq[ch]=freq.get(ch,0)+1
+    if freq[ch]>1:
+     res.append(ch)
+print(set(res))                # 
 
 
 
