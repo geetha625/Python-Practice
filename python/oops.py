@@ -856,6 +856,7 @@ a1.transfer(a2,1000)
 a1.display_balance()          # 4000
 a2.display_balance()           # 3000
 
+
 # 17 transfer 
 class BankAccount:
     def __init__(self,balance):
@@ -876,9 +877,79 @@ class BankAccount:
 a1=BankAccount(6000)
 a2=BankAccount(4000)
 a1.transfer(a2,1500)
+a1.display_balance()       # 4500
+a2.display_balance()      # 5500
+
+'''class BankAccount:
+    def __init__(self,balance):
+        self.__balance=balance
+        self.transactions=[]
+    def deposit(self,amount):
+        self.__balance+=amount
+        self.transactions.append("deposited"+str(amount))
+    def withdraw(self,amount):
+        if amount>self.__balance:
+            print("insufficient balance")
+        else:
+            self.__balance+=amount
+        self.transactions.append("withdrew"+str(amount))
+    def transfer(self,other_account,amount):
+        if amount<=self.__balance:
+            self.__balance-=amount
+            other_account.__balance+=amount
+        self.transactions.append("transferred"+str(amount))
+    def display_balance(self):
+        print("balance:",self.__balance)
+    def show_transactions(self):
+        for t in self.transactions:
+            print(t)
+a1=BankAccount(6000)
+a2=BankAccount(4000)
+a1.deposit(2000)
+a1.withdraw(500)
+a1.transfer(a2,1500)
 a1.display_balance()
 a2.display_balance()
+a1.show_transactions()
+OUTPUT:
+balance: 7000
+balance: 5500
+deposited2000
+withdrew500
+transferred1500 '''
 
+# CHECK BALANCE METHOD
+class BankAccount:
+    def __init__(self,balance):
+        self.__balance=balance
+        self.transactions=[]
+    def deposit(self,amount):
+        self.__balance+=amount
+        self.transactions.append("deposited" + str(amount))
+    def withdraw(self,amount):
+        if amount>self.__balance:
+            print("insuficient balance")
+        else:
+            self.__balance-=amount
+            self.transactions.append("withdrew" + str(amount))
+    def transfer(self,other_account,amount):
+        if amount <=self.__balance:
+            self.__balance-=amount
+            other_account.__balance+=amount
+            self.transactions.append("transferred" + str(amount))
+    def check_balance(self):
+        return self.__balance
+    def show_transactions(self):
+        for t in self.transactions:
+            print(t)
+a1=BankAccount(6000)
+a2=BankAccount(4000)
+a1.deposit(2000)
+a1.withdraw(500)
+a1.transfer(a2,1500)
+print("a1 balance:",a1.check_balance())
+print("a2 balance:",a2.check_balance())
+a1.show_transactions()
 
 
 
