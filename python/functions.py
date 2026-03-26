@@ -517,7 +517,7 @@
 
 # FIND LARGEST NUM
 
-def largest_num(n):
+''' def largest_num(n):
     large_=0
     while n>0:
         digit=n%10
@@ -525,7 +525,27 @@ def largest_num(n):
             large_=digit
         n=n//10
     return large_
-print(largest_num(58392))          # 9
+print(largest_num(58392))  '''        # 9
+
+# ADVANCED FUNCTION - LAMBDA,MAP,ZIP
+
+''' USING LAMBDA FUNCTION '''     # it reduces the complexity and code also
+add=lambda a,b,c: print (a+b+c)
+add(4,5,5)           # 14
+
+''' MAP FUNCTION '''     # it is used to pass multiple arguments at once
+nums=[1,2,3,4,5]
+def sq(n):
+    return n*n
+square=map(sq,nums)
+print(list(square))        # [1, 4, 9, 16, 25]
+
+''' ZIP FUNCTION '''      # it is used to map multiple data types together
+names=["geetha","swetha","swathi"]
+id=[1,3,5]
+mapped=zip(names,id)
+print(list(mapped))
+
         
 
 
