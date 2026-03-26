@@ -561,16 +561,16 @@ OUTPUT:
 # PRACTICE QUES
 
 # 1
-class Student:
+'''class Student:
     def __init__(self,name):
         self.name=name
     def display(self):
         print(self.name)
 s=Student("geetha")
-s.display()            # geetha
+s.display()     '''       # geetha
 
 # 2
-class Employee:
+'''class Employee:
     def __init__(self,salary):
         self.salary=salary
     def increase_salary(self,amount):
@@ -579,10 +579,10 @@ class Employee:
         print(self.salary)
 e=Employee(20000)
 e.increase_salary(5000)
-e.display()               # 25000
+e.display()        '''       # 25000
 
 # 3
-class Rectangle:
+'''class Rectangle:
     def __init__(self,length,width):
         self.length=length
         self.width=width
@@ -592,13 +592,13 @@ class Rectangle:
         return 2*(self.length+self.width)
 r=Rectangle(4,3)
 print(r.area())                      # 12
-print(r.perimeter())                 # 14
+print(r.perimeter())        '''         # 14
 
 # use return when you want to send a value back
 # use print() when you want to display inside the method
 
 # 4 STUDENT RESULT
-class Student:
+'''class Student:
     def __init__(self,name,marks):
         self.name=name
         self.marks=marks
@@ -608,10 +608,10 @@ class Student:
         else:
             return "fail"
 s=Student("geetha",75)
-print(s.is_pass())                    # pass
+print(s.is_pass())       '''             # pass
 
 # 5 STUDENT GRADE 
-class Student:
+'''class Student:
     def __init__(self,name,marks):
         self.name=name
         self.marks=marks
@@ -625,10 +625,10 @@ class Student:
         else:
             return "fail"
 s=Student("geetha",82)
-print(s.get_grade())                    # B
+print(s.get_grade())     '''               # B
 
 # 6 BANK ACCOUNT
-class BankAccount:
+'''class BankAccount:
     def __init__(self,balance):
         self.balance=balance
     def deposit(self,amount):
@@ -643,10 +643,10 @@ class BankAccount:
 b=BankAccount(1000)
 b.deposit(500)
 b.withdraw(200)
-b.display()                      # 1300
+b.display()       '''               # 1300
 
 # 7 COUNT NO. OF OBJECTS
-class Student:
+'''class Student:
      count=0
      def __init__(self,name):
          self.name=name
@@ -664,13 +664,13 @@ s2.display()
 s3.display()  
 Student.total_students()                        
 # OUTPUT:
-'''geetha
+geetha
 avinash
 pavani
 total students: 3 '''
 
 # 8   UPDATE STUDENT MARKS
-class Student:
+'''class Student:
     def __init__(self,name,marks):
         self.name=name
         self.marks=marks
@@ -682,20 +682,20 @@ class Student:
 s1=Student("geetha",82)
 s1.display()
 s1.update_marks(90)
-s1.display()                     # 90
+s1.display()  '''                   # 90
 
 # 9 __str__ METHOD
-class Employee:
+'''class Employee:
     def __init__(self,name,salary):
         self.name=name
         self.salary=salary
     def __str__(self):
         return "employee name: "+self.name+"\nsalary: "+str(self.salary)
 e1=Employee("geetha",48000)                 # geetha
-print(e1)                                   # 48000
+print(e1)      '''                             # 48000
 
 # 10 FIND HIGHEST SALARY
-class Employee:
+'''class Employee:
     def __init__(self,name,salary):
         self.name=name
         self.salary=salary
@@ -711,10 +711,10 @@ elif e2.salary>e1.salary and e3.salary>e2.salary:
     highest=e2
 else:
     highest=e3
-print("highest salary:",highest.name,highest.salary)                  # anu 75000
+print("highest salary:",highest.name,highest.salary)   '''               # anu 75000
 
 # 11 CLASS VARIABLE AND AVERAGE CALCULATION
-class Student:
+'''class Student:
     total_marks=0
     count=0
     def __init__(self,name,marks):
@@ -729,10 +729,10 @@ class Student:
 s1=Student("geetha",88)
 s2=Student("ram",75)
 s3=Student("anu",92)    
-Student.average_marks()                        # average marks: 85.0
+Student.average_marks()   '''                     # average marks: 85.0
 
 # 12 INHERITANCE
-class Person:
+'''class Person:
     def __init__(self,name):
         self.name=name
     def display_name(self):
@@ -745,10 +745,10 @@ class Student(Person):
         print(self.marks)
 s=Student("geetha",88)
 s.display_name()           # geetha
-s.display_marks()           # 88
+s.display_marks()  '''         # 88
 
 # use super()
-class Person:
+'''class Person:
     def __init__(self,name):
         self.name=name
     def display_name(self):
@@ -761,10 +761,10 @@ class Student(Person):
         print(self.marks)
 s=Student("geetha",88)
 s.display_name()           # geetha
-s.display_marks()          # 88
+s.display_marks()   '''       # 88
 
 # 13 POLYMORPHISM ( METHOD OVERRIDING)
-class Animal:
+'''class Animal:
     def sound(self):
         print("animal makes sound")
 class Dog(Animal):
@@ -773,10 +773,10 @@ class Dog(Animal):
 a=Animal()
 d=Dog()
 a.sound()           # animal makes sound
-d.sound()           # dog barks
+d.sound()   '''        # dog barks
 
 # 14 POLYMORPHISM WITH MULTIPLE CLASSES
-class Shape():
+'''class Shape():
     def area(self):
         print("area of shape")
 class Rectangle(Shape):
@@ -793,10 +793,10 @@ class Circle(Shape):
 r=Rectangle(4,3)
 c=Circle(2)
 r.area()            # 12
-c.area()            # 12.56
+c.area()    '''        # 12.56
 
 # 15 ENCAPSULATION ( PRIVATE VARIABLE )
-class BankAccount:
+''' class BankAccount:
     def __init__(self,balance):
         self.__balance=balance
     def deposit(self,amount):
@@ -811,10 +811,10 @@ class BankAccount:
 b=BankAccount(3000)
 b.deposit(2000)
 b.withdraw(2500)
-b.display_balance()           # 2500
+b.display_balance() '''          # 2500
 
 # 16 BANK ACCOUNT WITH TRANSACTION HISTORY
-class BankAccount:
+'''class BankAccount:
     def __init__(self,balance):
         self.__balance=balance
         self.transactions=[]
@@ -836,12 +836,12 @@ b=BankAccount(4000)
 b.deposit(2000)
 b.withdraw(500)
 b.display_balance()         # 5500
-b.show_transactions()       # deposited 2000
+b.show_transactions()  '''     # deposited 2000
                             # withdrew 500
 
 ''' transfer() means acc A sends amount to acc B '''
 
-class BankAccount:
+'''class BankAccount:
     def __init__(self,balance):
         self.__balance=balance
     def transfer(self,other,amount):
@@ -854,11 +854,11 @@ a1=BankAccount(5000)
 a2=BankAccount(2000)
 a1.transfer(a2,1000)
 a1.display_balance()          # 4000
-a2.display_balance()           # 3000
+a2.display_balance()     '''    # 3000
 
 
 # 17 transfer 
-class BankAccount:
+''' class BankAccount:
     def __init__(self,balance):
         self.__balance=balance
     def deposit(self,amount):
@@ -878,7 +878,7 @@ a1=BankAccount(6000)
 a2=BankAccount(4000)
 a1.transfer(a2,1500)
 a1.display_balance()       # 4500
-a2.display_balance()      # 5500
+a2.display_balance()  '''    # 5500
 
 '''class BankAccount:
     def __init__(self,balance):
@@ -919,7 +919,7 @@ withdrew500
 transferred1500 '''
 
 # CHECK BALANCE METHOD
-class BankAccount:
+'''class BankAccount:
     def __init__(self,balance):
         self.__balance=balance
         self.transactions=[]
@@ -950,6 +950,21 @@ a1.transfer(a2,1500)
 print("a1 balance:",a1.check_balance())
 print("a2 balance:",a2.check_balance())
 a1.show_transactions()
+OUTPUT :
+a1 balance: 6000
+a2 balance: 5500
+deposited2000
+withdrew500
+transferred1500 '''
+
+''' add __str__'''
+class BankAccount:
+    def __init__(self,balance):
+        self.__balance=balance
+    def __str__(self):
+         return "bank balance is "+ str(self.__balance)
+a1=BankAccount(5000)
+print(a1)
 
 
 
