@@ -136,6 +136,62 @@
 #if a==a[::-1]:
  #   print("palindrome")
 
+''' STRING METHODS '''
+
+txt="i am geetha, a student in GNIT"
+a=txt.capitalize()
+print(a)    # I am geetha, a student in gnit
+
+txt="i am from india and i love india"
+b=txt.count("india")    # 2
+b=txt.count("love")     # 1
+print(b)
+
+txt="i love reading books"
+c=txt.find("reading")
+print(c)         # 7 starts ,include spaces
+
+txt="i am a student"
+d=txt.index("a")
+print(d)          # 2 no spaces included
+
+txt="i am geetha"
+e=txt.split()
+print(e)            # ['i', 'am', 'geetha']
+
+txt="geetha12"
+a=txt.isalnum()
+print(a)          # True
+
+txt="geetha12"
+a=txt.isalpha()
+print(a)            # False
+txt="geethzz"
+a=txt.isalpha()
+print(a)            # True
+
+txt="2026"
+a=txt.isdigit()
+print(a)             # True
+
+txt=["geetha","is","a","girl"]
+joined="-".join(txt)
+print(joined)           # geetha-is-a-girl
+
+txt="i love sports"
+replace=txt.replace("sports","playing")
+print(replace)        # i love playing
+
+txt="hello,world"
+start=txt.startswith("hello")
+end=txt.endswith(".")
+print(start,end)          # True False
+
+
+  
+
+
+
     
 
 
