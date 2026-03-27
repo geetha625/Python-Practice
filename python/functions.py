@@ -544,7 +544,7 @@ print(list(square))        # [1, 4, 9, 16, 25]
 names=["geetha","swetha","swathi"]
 id=[1,3,5]
 mapped=zip(names,id)
-print(list(mapped))
+print(list(mapped))         # [('geetha', 1), ('swetha', 3), ('swathi', 5)]
 
         
 
