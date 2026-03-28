@@ -155,7 +155,10 @@
 5 .sort()
 6 .count()
 7 .index()
-8 .reverse() '''
+8 .reverse()
+9 .extend()
+10 .copy()
+11 .clear() '''
 
 '''- lists  are used to store multiple values in a single variable 
 - it is mutable,ordered and allows duplicate members '''
@@ -165,9 +168,9 @@ fruits.append("banana")     # ['apple', 'cherry', 'mango', 'banana']
 fruits.insert(1,"melon")     # ['apple', 'melon', 'cherry', 'mango', 'banana']
 fruits.sort()           # ['apple', 'banana', 'cherry', 'mango', 'melon']
 fruits.pop()           # ['apple', 'banana', 'cherry', 'mango']
-fruits.remove("apple")     # ['banana', 'cherry', 'mango']
-fruits.count("mango")
+fruits.remove("apple")     # ['banana', 'cherry', 'mango'] 
 fruits.reverse()    # ['mango', 'cherry', 'banana']
-print(fruits.count("mango"))
+print(fruits.count("mango"))     # 1
+
 
 
