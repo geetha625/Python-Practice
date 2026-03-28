@@ -191,6 +191,32 @@
 #t+=(4,)
 #print(t)
 
+''' TUPLE FUNCTIONS '''
+''' max()
+min()
+index()
+count()
+tuple() '''
+
+''' COUNT '''    # it count how many times it occured
+nums=(1,2,5,3,5,7)
+print(nums.count(5))    # 2   ( 2 times)
+
+''' INDEX '''  # it says at which position it is present
+nums=(8,4,2,1,6,7)
+print(nums.index(4))  # 1  ( at index 1)
+
+''' MIN & MAX '''
+nums=(4,1,3,2,7,6,3,8)
+print(min(nums))   # 1
+print(max(nums))   # 8
+
+
+
+
+
+
+
 
 
 
