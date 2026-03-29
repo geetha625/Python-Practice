@@ -169,12 +169,12 @@
  #   print("false")
 
 #8.check if a is subset of b
-a={1,2}
-b={1,2,3,4}
-if a.issubset(b):
-    print("true")
-else:
-    print("false")
+#a={1,2}
+#b={1,2,3,4}
+#if a.issubset(b):
+#    print("true")
+#else:
+#    print("false")
 
 #9.remove common elemnts from both sets
 #a={1,2,3,4}
@@ -184,7 +184,45 @@ else:
 #print(b)
 
 #10.find unique elements
-l1=[1,2,3,4,4,5]
-l2=[3,4,6,7]
-s=set(l1).union(set(l2))
-print(s)
+#l1=[1,2,3,4,4,5]
+#l2=[3,4,6,7]
+#s=set(l1).union(set(l2))
+#print(s)
+
+''' SETS ARE USED TO STORE MULTIPLE VALUES IN A SINGLE VARIABLE
+ IT IS WRITTEN IN { } 
+ IT DOESNT ALLOW DUPLICATES
+  IT DOESNT FOLLOW ANY ORDER '''
+
+''' SET METHODS '''
+fruits={"apple","mango","banana"}
+
+# add() method , random
+fruits.add("orange")
+print(fruits)                       # {'apple', 'banana', 'orange', 'mango'} 
+
+# pop() method , random
+fruits.pop()
+print(fruits)                       # {'banana', 'orange', 'mango'} , random
+
+# remove () method ,specified
+fruits.remove("banana")
+print(fruits)                       # {'mango', 'orange'}
+
+x={"geetha","swetha","swathi"}
+y={"microsoft","google","swathi"}
+
+# difference() method
+print(y.difference(x))     # {'microsoft', 'google'}
+print(x.difference(y))        # {'swetha', 'geetha'}
+
+# intersection() method
+print(x.intersection(y))     # {'swathi'}
+
+# union() method
+print(x.union(y))              # {'swetha', 'microsoft', 'geetha', 'swathi', 'google'}
+
+# update() method
+x.update(y)
+print(x)              # {'google', 'swetha', 'microsoft', 'swathi', 'geetha'}
+
