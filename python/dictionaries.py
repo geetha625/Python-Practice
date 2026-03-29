@@ -449,10 +449,43 @@
 #print(max_sub,max_val)
 
 #convert nested dict to flat dict
-import copy
+'''import copy
 d1={"a":1,"b":{"x":10,"y":20}}
 d2=copy.deepcopy(d1)
-print(d2)
+print(d2)'''
+
+''' DICT METHODS ''' 
+
+''' it doesnt allow duplicates '''
+
+car={"brand":"ford","model":"mustang","year":1964}
+# items() method
+print(car.items())      # dict_items([('brand', 'ford'), ('model', 'mustang'), ('year', 1964)])
+
+# get() method
+print(car.get("brand"))    # ford
+
+# key() method
+print(car.keys())   # dict_keys(['brand', 'model', 'year'])
+
+# values() method
+print(car.values())     # dict_values(['ford', 'mustang', 1964])
+
+# pop() method
+car.pop("year")
+print(car)           # {'brand': 'ford', 'model': 'mustang'}
+
+# pop items() method
+car.popitem()
+print(car)     # {'brand': 'ford'}
+
+# update() method
+car.update({"color":"white"})
+print(car)    # {'brand': 'ford', 'color': 'white'}
+
+# clear() method
+car.clear()
+print(car)
 
 
 
