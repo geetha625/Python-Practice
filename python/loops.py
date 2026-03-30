@@ -185,14 +185,42 @@ OUTPUT:
 
 # PRODUCT
 
-n=234
+''' n=234
 product_=1
 while n>0:
     digit=n%10
     product_*=digit
     n=n//10
-print(product_)
+print(product_) '''     # 24
 
+''' num=1
+while num<6:
+    print(num)
+    num+=1 '''
+
+''' num=1
+while num<6:
+    print(num)
+    if num==3:
+        break
+    num+=1
+OUTPUT :
+1
+2
+3 '''
+
+''' num=0
+while num<6:
+    num+=1
+    if num==3:
+        continue
+    print(num)
+OUTPUT :
+1
+2
+4
+5
+6 '''
 
 
 
