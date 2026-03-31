@@ -485,7 +485,7 @@ print(car)    # {'brand': 'ford', 'color': 'white'}
 
 # clear() method
 car.clear()
-print(car)
+print(car)       # {}
 
 
 
