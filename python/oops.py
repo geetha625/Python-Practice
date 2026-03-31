@@ -958,13 +958,13 @@ withdrew500
 transferred1500 '''
 
 ''' add __str__'''         # it controls how ur object prints
-class BankAccount:
+'''class BankAccount:
     def __init__(self,balance):
         self.__balance=balance
     def __str__(self):
          return "bank balance is "+ str(self.__balance)
 a1=BankAccount(5000)
-print(a1)           # 5000
+print(a1)       '''    # 5000
 
 
 
