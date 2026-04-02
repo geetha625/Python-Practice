@@ -509,7 +509,9 @@ for ch in s:
     freq[ch]=freq.get(ch,0)+1
     if freq[ch]>1:
      res.append(ch)
-print(set(res))                # 
+print(set(res))                # {'k', 'e', 'G', 's'}
+
+
 
 
 
