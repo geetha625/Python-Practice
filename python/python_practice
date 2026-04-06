@@ -495,7 +495,7 @@ for i in s:
         s.append(i)
 print(result)'''
 
-s="GeeksforGeeks"
+'''s="GeeksforGeeks"
 res=[]
 for i in s:
     if s.count(i)>1 and i not in res:
@@ -514,7 +514,14 @@ print(set(res))                # {'k', 'e', 'G', 's'}
 # multiplication table
 num=int(input("enter a number:"))
 for i in  range(1,11):
-   print(num,"x",i,"=",num*i)
+   print(num,"x",i,"=",num*i) '''
+
+   # prime number
+n=int(input("enter a num:"))
+if n%2!=0:
+      print("prime num")
+else:
+      print("not a prime num")
 
 
 
