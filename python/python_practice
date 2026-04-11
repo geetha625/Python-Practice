@@ -530,7 +530,7 @@ for i in range(2,num):
             print(" not prime")
             break
 else:
-            print(" prime")
+    print(" prime")
             
 
 
