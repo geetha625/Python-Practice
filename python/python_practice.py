@@ -582,6 +582,21 @@ def anagrams(s1,s2):
     return freq1==freq2
 print(anagrams("listen","silent"))
 
+def sq_dec(func):
+    def wrapper(a,b):
+        result=func(a,b)
+        return result**2
+    return wrapper
+@sq_dec
+def add(a,b):
+    return a+b
+@sq_dec
+def sub(a,b):
+    return a-b
+print(add(2,4))
+print(sub(2,4))
+
+
 
 
 
