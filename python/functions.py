@@ -530,21 +530,106 @@ print(largest_num(58392))  '''        # 9
 # ADVANCED FUNCTION - LAMBDA,MAP,ZIP
 
 ''' USING LAMBDA FUNCTION '''     # it reduces the complexity and code also
-add=lambda a,b,c: print (a+b+c)
-add(4,5,5)           # 14
+#add=lambda a,b,c: print (a+b+c)
+#add(4,5,5)           # 14
 
 ''' MAP FUNCTION '''     # it is used to pass multiple arguments at once
-nums=[1,2,3,4,5]
+'''nums=[1,2,3,4,5]
 def sq(n):
     return n*n
 square=map(sq,nums)
-print(list(square))        # [1, 4, 9, 16, 25]
+print(list(square)) '''       # [1, 4, 9, 16, 25]
 
 ''' ZIP FUNCTION '''      # it is used to map multiple data types together
-names=["geetha","swetha","swathi"]
+'''names=["geetha","swetha","swathi"]
 id=[1,3,5]
 mapped=zip(names,id)
-print(list(mapped))         # [('geetha', 1), ('swetha', 3), ('swathi', 5)]
+print(list(mapped))  '''       # [('geetha', 1), ('swetha', 3), ('swathi', 5)]
+
+''' RECURSION '''
+
+def print_nums(n):
+    if n==0:
+        return
+    print(n)
+    return print_nums(n-1)
+print_nums(3)
+
+def print_n_to_1(n):
+    if n==0:
+        return
+    print(n)
+    return print_n_to_1(n-1)
+print_n_to_1(3)
+
+# factorial
+def fact(n):
+    if n==0 or n==1:
+        return 1
+    return n*fact(n-1)
+print(fact(5))
+
+# sum of first N nums
+def sum_n(n):
+    if n==0:
+        return 0
+    return n+sum_n(n-1)
+print(sum_n(4))
+
+# fibonacci
+def fibo(n):
+    if n==0:
+        return 0
+    if n==1:
+        return 1
+    return fibo(n-1)+fibo(n-2)
+print(fibo(8))
+
+# rev_str
+def rev_str(s):
+    if len(s)==0:
+        return s
+    return rev_str(s[1:])+s[0]
+print(rev_str("geetha"))
+
+# palindrome
+def is_palindrome(s):
+    if len(s)<=1:
+        return True
+    if s[0]!=s[-1]:
+        return False
+    return is_palindrome(s[1:-1])
+print(is_palindrome("madam"))
+
+# print nums 1 to N
+def num_1_to_n(n):
+    if n==0:
+        return 
+    num_1_to_n(n-1)
+    print(n)
+num_1_to_n(5)
+
+# print nums N to 1
+def n_to_1(n):
+    if n==0:
+        return
+    print(n)
+    n_to_1(n-1)
+n_to_1(5)
+
+# sum of digits
+def sum_n(n):
+    if n==0:
+        return 0
+    return n+sum_n(n-1)
+print(sum_n(3))
+
+# count digits
+def count_n(n):
+    if n==0:
+        return 0
+    return 1+count_n(n//10)
+print(count_n(123))
 
         
 
