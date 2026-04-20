@@ -596,6 +596,13 @@ def sub(a,b):
 print(add(2,4))
 print(sub(2,4))
 
+# reverse words
+s="python is fun"
+rev=""
+for word in s.split():
+    rev=word+" "+rev
+print(rev)
+
 
 
 
