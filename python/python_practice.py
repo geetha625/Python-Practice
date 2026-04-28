@@ -603,6 +603,135 @@ for word in s.split():
     rev=word+" "+rev
 print(rev)
 
+#1 write a func to print nums from 1 to N
+def nums(n):
+    for i in range(1,n+1):
+        print(i)
+nums(5)
+'''OUTPUT :
+1
+2
+3
+4
+5'''
+
+#2 write a funct to find the sum of nums in a lst
+
+def find_sum(nums):
+    total=0
+    for i in nums:
+        total+=i
+    return total
+print(find_sum([4,8,2,6]))     # 20
+
+#3 write a func to find the max num in a lst
+
+def find_max(nums):
+    max_num=nums[0]
+    for i in nums:
+        if i>max_num:
+            max_num=i
+    return max_num
+print(find_max([3,7,2,9,5]))    # 9
+
+#4 write a func to reverse the str
+
+def rev_str(s):
+    return s[::-1]
+print(rev_str("hello"))         # olleh
+
+def rev_str(s):
+    rev=""
+    for ch in s:
+        rev=ch+rev
+    return rev
+print(rev_str("hello"))    # olleh
+
+#5 write a func to count vowels in a str
+
+def count_vowels(s):
+    vowel="aeiouAEIOU"
+    count=0
+    for ch in s:
+        if ch in vowel:
+            count+=1
+    return count
+print(count_vowels("education"))    # 5
+
+#6 count even nums
+
+def count_even(nums):
+    count=0
+    for i in nums:
+        if i%2==0:
+            count+=1
+    return count
+print(count_even([2,5,8,7,6,3]))    # 3
+
+#7 write a func to find min num
+
+def find_min(nums):
+    min_num=nums[0]
+    for i in nums:
+        if i<min_num:
+            min_num=i
+    return min_num
+print(find_min([10,4,7,1,9]))         # 1
+
+#8 write a func to check palindrome
+
+def is_palindrome(s):
+    rev=""
+    for ch in s:
+        rev=ch+rev
+    if rev==s:
+        return "palindrome"
+    else:
+        return "not a palindrome"
+print(is_palindrome("afifa"))
+
+def is_palindrome(s):
+    return s==s[::-1]
+print(is_palindrome("madam"))
+
+#9 write a func to sum of digits of a num
+
+def sum_of_digits(n):
+    total=0
+    for digit in str(n):
+        total+=int(digit)
+    return total
+print(sum_of_digits(1234))    # 10
+
+def sum_of_digits(n):
+    total=0
+    while n>0:
+        digit=n%10
+        total+=digit
+        n=n//10
+    return total
+print(sum_of_digits(1234))     # 10
+
+#10 
+def sum_of_digits(n):
+    total=0
+    for digit in str(n):
+        total+=int(digit)
+    return total
+print(sum_of_digits(567))
+
+        
+
+
+
+
+
+
+
+    
+
+
+
 
 
 
