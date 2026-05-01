@@ -718,7 +718,145 @@ def sum_of_digits(n):
     for digit in str(n):
         total+=int(digit)
     return total
-print(sum_of_digits(567))
+print(sum_of_digits(567))    # 18
+
+#11 write a func to find the largest among 3 nums
+
+def largest_of_three(a,b,c):
+    if a>=b and a>=c:
+        return "a is the largest"
+    elif b>=a and b>=c:
+        return "b is the largest"
+    else:
+        return "c is the largest"
+print(largest_of_three(10,25,15))           # b is the largest
+
+def largest_of_three(a,b,c):
+    if a>=b and a>=c:
+        return a
+    elif b>=a and b>=c:
+        return b
+    else:
+        return c
+print(largest_of_three(10,25,15))            # 25
+
+#12 write a func to remove all spaces from a str
+
+def remove_spaces(s):
+    res=""
+    for ch in s:
+        if ch!=" ":
+            res+=ch
+    return res
+print(remove_spaces("hello world python"))            # helloworldpython
+
+s="hello world python"
+res="".join(s.split())
+print(res)         # helloworldpython
+
+# 13
+
+def remove_spaces(s):
+    res="".join(s.split())
+    return res
+print(remove_spaces("I love Python"))                 # IlovePython
+
+#14 count freq of a num in a lst
+
+def count_freq(nums,target):
+  count=0
+  for i in nums:
+    if i==target:
+        count+=1
+  return count
+print(count_freq([1,2,3,2,4,2],2))                  # 3
+
+def count_freq(nums,target):
+    count=0
+    for num in nums:
+        if num==target:
+            count+=1
+    return count
+print(count_freq([5,1,5,2,5,3],3))            # 1
+
+# using dict to count all freq
+def count_all_freq(nums):
+    freq={}
+    for i in nums:
+        if i in freq:
+            freq[i]+=1
+        else:
+            freq[i]=1
+    return freq
+print(count_all_freq([1,2,3,2,4,2]))           #  {1: 1, 2: 3, 3: 1, 4: 1}
+
+#15 reverse the lst without using builtin func
+
+def rev_lst(nums):
+    rev=[]
+    for i in nums:
+        rev=[i]+rev                 # [i] : putting the element at the front of the lst
+    return rev
+print(rev_lst([1,2,3,4,5]))                # [5, 4, 3, 2, 1]
+
+#16 find the sec largest num
+
+def sec_max(nums):
+    largest=max(nums)
+    nums.remove(largest)
+    return max(nums)
+print(sec_max([10,20,5,8,15]))            # 15
+
+# OOPS
+
+class Student:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+s1=Student("geetha",20)
+print(s1.name)              # geetha
+print(s1.age)               # 20
+
+class Student:
+    def __init__(self,name,marks):
+        self.name=name
+        self.marks=marks
+s1=Student("geetha",8.7)
+print(s1.name)                     # geetha
+print(s1.marks)                    # 8.7
+
+class Student:
+    def __init__(self,name,marks):
+        self.name=name
+        self.marks=marks
+    def display(self):
+        print("name:",self.name)
+        print("marks:",self.marks)
+s1=Student("geetha",8.7)                    # name: geetha
+s1.display()                                # marks: 8.7
+
+# create 2 students and display both
+
+class Student:
+    def __init__(self,name,marks):
+        self.name=name
+        self.marks=marks
+    def display(self):
+        print("name:",self.name)
+        print("marks:",self.marks)
+s1=Student("geetha",8.7)
+s2=Student("ravi",7.5)
+s1.display()
+s2.display()
+OUTPUT :
+name: geetha
+marks: 8.7
+name: ravi
+marks: 7.5
+
+
+
+    
 
         
 
