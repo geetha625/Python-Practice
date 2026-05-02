@@ -30,7 +30,7 @@
 
 #3.duplicate keys
 #d={"a":10,"b":20,"a":30}
-#print(d)         the last entered value is stpred for a
+#print(d)         the last entered value is stored for a
 
 #4.mixed data types
 #dict={
