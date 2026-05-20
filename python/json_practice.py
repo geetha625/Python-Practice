@@ -119,4 +119,29 @@ txt = '''
 data=json.loads(txt)
 employees=data["company"]["employees"]
 highest=max(employees,key=lambda emp:emp["salary"])
-print(highest["name"])
+print(highest["name"])             # anu
+
+import json
+txt='''
+    {
+      "company":{
+           "employees":[
+                    {"name":"ravi","salary":50000},
+                    {"name":"anu","salary":65000},
+                    {"name":"kiran","salary":45000},
+                    {"name":"meena","salary":70000}
+           ]
+      }
+    }
+'''
+data=json.loads(txt)
+employees=data["company"]["employees"]
+#lowest=min(employees,key=lambda emp:emp["salary"])  
+#print(lowest["name"])                 # kiran
+#print(len(employees))           # 4
+#for employee in employees:
+#    if (employee["salary"])>50000:
+#        print(employee["name"])                   # anu meena
+sort=sorted(employees,key=lambda emp:emp["salary"])
+
+
