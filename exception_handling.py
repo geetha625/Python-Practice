@@ -1,5 +1,5 @@
 
-'''try:
+try:
     x=int(input())
     print(10/x)
 except:
@@ -116,7 +116,7 @@ try:
 finally:
     return 2
 output:
-SyntaxError: 'return' outside function    '''
+SyntaxError: 'return' outside function    
 
 def Test():
  try:
@@ -124,8 +124,9 @@ def Test():
  finally:
     return 2
 print(Test())
-
-''' # exception in finally
+output:
+2 - finally overrides previous return and always execute
+ # exception in finally
 try:
     print("A")
 finally:
@@ -146,7 +147,9 @@ marks=120
 if marks>100:
     raise InvalidMarksError("marks cannot be more than 100")
 output:
-InvalidMarksError: marks cannot be more than 100 '''
+InvalidMarksError: marks cannot be more than 100 
+
+
 
 
 
