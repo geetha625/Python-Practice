@@ -532,7 +532,7 @@ for i in range(2,num):
 else:
     print(" prime")'''
 
-def palindrome(s):
+'''def palindrome(s):
     if s==s[::-1]:
         return True
     else:
@@ -608,16 +608,16 @@ def nums(n):
     for i in range(1,n+1):
         print(i)
 nums(5)
-'''OUTPUT :
+OUTPUT :
 1
 2
 3
 4
-5'''
+5 '''
 
 #2 write a funct to find the sum of nums in a lst
 
-def find_sum(nums):
+'''def find_sum(nums):
     total=0
     for i in nums:
         total+=i
@@ -852,9 +852,17 @@ OUTPUT :
 name: geetha
 marks: 8.7
 name: ravi
-marks: 7.5
+marks: 7.5 '''
 
+n=5
+for i in range(1,n+1):
+    print("*"*i)
 
+n=5
+for i in range(n):
+    for j in range(n):
+        print("*",end="")
+    print()
 
     
 
